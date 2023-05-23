@@ -1,0 +1,1 @@
+export type ITheme = 'DARK'|'LIGHT'

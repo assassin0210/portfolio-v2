@@ -1,23 +1,46 @@
 import { ReactNode } from 'react'
 
+import { TColorsType } from '../lib/types/common'
+
 interface IProps {
   children: ReactNode
   className?: string
+  color?: TColorsType
 }
-export const H32 = ({ children, className }: IProps) => {
+export const H1 = ({ children, className = '' }: IProps) => {
   return (
-    <h1 className={`text-black dark:text-white ${className}`}>{children}</h1>
+    <h1
+      className={`dark:text-white text-black text-[48px] font-bold  ${className}`}
+    >
+      {children}
+    </h1>
   )
 }
-export const H24 = ({ children, className }: IProps) => {
-  return <h2 className={`${className}`}>{children}</h2>
+export const H2 = ({ children, className = '' }: IProps) => {
+  return (
+    <h2 className={`dark:text-white text-[20px] text-black ${className}`}>
+      {children}
+    </h2>
+  )
 }
-export const H20 = ({ children, className }: IProps) => {
-  return <h3 className={`${className}`}>{children}</h3>
+export const H3 = ({ children, className = '' }: IProps) => {
+  return (
+    <h3 className={`dark:text-white text-black text-[16px] ${className}`}>
+      {children}
+    </h3>
+  )
 }
-export const P16 = ({ children, className }: IProps) => {
-  return <p className={`${className}`}>{children}</p>
+export const P16 = ({ children, className = '' }: IProps) => {
+  return (
+    <p className={`text-gray-100 font-medium text-[16px] ${className}`}>
+      {children}
+    </p>
+  )
 }
-export const P12 = ({ children, className }: IProps) => {
-  return <p className={`${className}`}>{children}</p>
+export const P14 = ({ children, className = '' }: IProps) => {
+  return (
+    <p className={` text-gray-100 text-[14px] font-medium ${className}`}>
+      {children}
+    </p>
+  )
 }

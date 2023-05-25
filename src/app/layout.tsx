@@ -2,8 +2,7 @@ import './globals.css'
 
 import { Inter } from 'next/font/google'
 
-import { Footer } from '@/features/footer/Footer'
-import { Header } from '@/features/header/Header'
+import { ThemeProvider } from '@/widgets/providers/theme/ThemeProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,12 +16,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  // const cookieStore = cookies()
+
   return (
-    <html lang="en">
-      <body className={`${inter.className} relative`}>
-        <Header />
-        {children}
-        <Footer />
+    <html lang={'en'} className={'dark'}>
+      <body
+        className={`${inter.className} overflow-x-hidden relative transition-all duration-500 dark:bg-mainBlue bg-white `}
+      >
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   )

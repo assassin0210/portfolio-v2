@@ -1,10 +1,16 @@
-'use client'
-import { useThemeDetector } from '@/widgets/theme/useThemeDetector'
+import { Header } from '@/features/header/Header'
+import { HomePage } from '@/features/homePage/HomePage'
+import { MouseEffect } from '@/features/mouseEffect/MouseEffect'
 
 export default function Home() {
-  const theme = useThemeDetector()
-
   return (
-    <main className="dark:bg-black bg-white h-screen w-full relative">132</main>
+    <MouseEffect>
+      <div className={'container grid grid-cols-2 gap-10   '}>
+        <header className={'sticky top-0 h-fit pt-20'}>
+          <Header />
+        </header>
+        <HomePage />
+      </div>
+    </MouseEffect>
   )
 }

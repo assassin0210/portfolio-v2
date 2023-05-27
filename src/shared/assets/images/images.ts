@@ -13,6 +13,8 @@ import imgOldPortfolio1 from './old_portfolio_1.png'
 import imgOldPortfolio2 from './old_portfolio_2.png'
 import imgPizza from './pizza.png'
 import imgPizzaC from './pizzaC.png'
+import imgRelines1 from './relines1.png'
+import imgRelines2 from './relines2.png'
 import imgTesla1 from './tesla1.png'
 import imgTesla2 from './tesla2.png'
 import imgTesla3 from './tesla2.png'
@@ -36,6 +38,8 @@ export {
   imgOldPortfolio2,
   imgPizza,
   imgPizzaC,
+  imgRelines1,
+  imgRelines2,
   imgTesla1,
   imgTesla2,
   imgTesla3,

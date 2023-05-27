@@ -12,6 +12,8 @@ import {
   imgOldPortfolio2,
   imgPizza,
   imgPizzaC,
+  imgRelines1,
+  imgRelines2,
   imgTesla1,
   imgTesla2,
   imgTesla3,
@@ -88,5 +90,14 @@ export const projectsData = [
     description:
       'Welcome to our small and exciting project about games! Here you will find the best games, highly anticipated releases, and detailed information about each of them. Our data is sourced from an open API and is regularly updated to keep you informed about the latest gaming trends. Join us to explore amazing game worlds, unique storylines, and captivating gameplay mechanics.',
     chips: ['React.js', 'Styled-component', 'Framer-motion', 'Open API'],
+  },
+  {
+    href: 'https://relines.vercel.app/',
+    githubLink: 'https://github.com/assassin0210/relines',
+    projectName: 'Test task for the company Relines',
+    images: [imgRelines1, imgRelines2],
+    description:
+      "Test task for the company Relines. I get data from open api . the table contains users. We can add a rating to a user or lower a user's rating. Also encourage or vice versa ban",
+    chips: ['React.js', 'Tailwind', 'Framer-motion', 'Open API'],
   },
 ]

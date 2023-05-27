@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-import { IconArrowUpRight } from '../../assets/icons/icons'
+import { IconArrowUpRight, IconGithub } from '../../assets/icons/icons'
 import { Chip } from '../Chip'
 import { H3, P14, P16 } from '../Typography'
 
@@ -12,6 +12,8 @@ export const ExperienceCard = ({
   linkName,
   position,
   description,
+  href,
+  githubLink,
 }: {
   isHovered: boolean
   unactive: boolean
@@ -20,10 +22,12 @@ export const ExperienceCard = ({
   linkName: string
   position?: string
   description?: string
+  href?: string
+  githubLink?: string
 }) => {
   return (
     <a
-      href={''}
+      href={href || ''}
       target={'_blank'}
       className={`pb-5 pt-4 pl-5 pr-7 grid grid-cols-[150px_1fr] gap-10 transition duration-300 rounded-md ${
         isHovered
@@ -60,6 +64,21 @@ export const ExperienceCard = ({
         {/*<P16 className={'!text-gray-300 font-medium '}>role</P16>*/}
         {description && (
           <P14 className={'text-gray-100 mt-2'}>{description}</P14>
+        )}
+        {githubLink && (
+          <div
+            role={'button'}
+            onClick={(e) => {
+              e.preventDefault()
+              e.stopPropagation()
+              window.open(githubLink, '_blank')
+            }}
+            className={
+              'flex items-center p-2 w-fit hover:scale-125 transition mt-2'
+            }
+          >
+            <IconGithub className={'dark:fill-white w-7 opacity-75'} />
+          </div>
         )}
         {chips && (
           <div className={'mt-3 flex flex-wrap gap-2'}>

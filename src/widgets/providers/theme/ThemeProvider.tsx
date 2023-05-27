@@ -1,7 +1,8 @@
 'use client'
 import { ReactNode, useEffect, useLayoutEffect } from 'react'
 
-import { LOCALE_STORAGE } from '../../../shared/consts/localeStogrageConsts'
+import { LOCALE_STORAGE } from '@/shared/consts/localeStogrageConsts'
+
 import { getTheme } from './getTheme'
 import { setTheme } from './setTheme'
 

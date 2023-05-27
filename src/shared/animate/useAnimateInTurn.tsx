@@ -8,7 +8,7 @@ export const useAnimateInTurn = () => {
 
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.45,
+    threshold: 0.25,
   })
 
   const getProps = useCallback(

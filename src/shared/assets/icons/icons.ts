@@ -1,2 +1,3 @@
 import IconArrowUpRight from './arrow_right_up.svg'
-export { IconArrowUpRight }
+import IconGithub from './icon_github.svg'
+export { IconArrowUpRight, IconGithub }

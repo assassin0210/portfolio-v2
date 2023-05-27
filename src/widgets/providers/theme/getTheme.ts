@@ -1,6 +1,6 @@
 'use client'
-import { LOCALE_STORAGE } from '../../../shared/consts/localeStogrageConsts'
-import { ITheme } from '../../../shared/lib/types/common'
+import { LOCALE_STORAGE } from '@/shared/consts/localeStogrageConsts'
+import { ITheme } from '@/shared/lib/types/common'
 
 export const getTheme = (): ITheme => {
   if (typeof localStorage === 'undefined') {

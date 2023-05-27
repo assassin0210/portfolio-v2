@@ -21,7 +21,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
 
   useLayoutEffect(() => {
     if (!localStorage.getItem(LOCALE_STORAGE.THEME)) {
-      document.documentElement.classList.add(
+      document.documentElement.classList?.add(
         window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : ''
       )
     } else {

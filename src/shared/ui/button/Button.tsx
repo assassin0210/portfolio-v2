@@ -34,7 +34,7 @@ const defaultEffects =
   'shadow-inner transition-shadow  active:shadow-green-700 active:drop-shadow-md hover:shadow-green-400'
 
 const linkColorTheme =
-  'dark:text-white text-black hover:!text-mainGreen transition font-semibold'
+  'dark:text-white text-green-600 hover:opacity-70 transition font-semibold'
 
 const sizeSchema: Record<TComponentSize, Record<TComponentType, string>> = {
   SMALL: {

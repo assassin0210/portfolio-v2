@@ -17,14 +17,14 @@ export const Resume = () => {
         >
           <P16
             className={
-              'text-white group-hover:text-green-200 transition-all duration-300'
+              'text-green-600 dark:text-white group-hover:text-green-700  dark:group-hover:text-green-200 transition-all duration-300'
             }
           >
             View full Resume
           </P16>
           <IconArrowUpRight
-            className={`fill-white group-hover:transform group-hover:translate-x-2 rotate-45
-           group-hover:scale-110 group-hover:fill-green-200 w-3 transition-all duration-300 `}
+            className={`dark:fill-white fill-green-600 group-hover:transform group-hover:translate-x-2 rotate-45
+           group-hover:scale-110 dark:group-hover:fill-green-200 group-hover:fill-green-700 w-3 transition-all duration-300 `}
           />
           <div
             className={

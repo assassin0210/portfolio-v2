@@ -32,14 +32,18 @@ export const H3 = ({ children, className = '' }: IProps) => {
 }
 export const P16 = ({ children, className = '' }: IProps) => {
   return (
-    <p className={`text-gray-100 font-medium text-[16px] ${className}`}>
+    <p
+      className={`text-black dark:text-gray-200 font-medium text-[16px] ${className}`}
+    >
       {children}
     </p>
   )
 }
 export const P14 = ({ children, className = '' }: IProps) => {
   return (
-    <p className={` text-gray-100 text-[14px] font-medium ${className}`}>
+    <p
+      className={`text-black dark:text-gray-100 text-[14px] font-medium ${className}`}
+    >
       {children}
     </p>
   )

@@ -9,12 +9,12 @@ import { Navbar } from './navbar/Navbar'
 export const Header = () => {
   return (
     <AnimateFromSide type={'left'}>
-      <div className={'items-center'}>
+      <div className={'items-center z-10'}>
         <Link href={'/'}>
           <H1>Sokolov Alexandr</H1>
         </Link>
-        <H2 className={'mt-3'}>Frontend developer</H2>
-        <P16 className={'mt-1 max-w-[300px] !text-gray-200'}>
+        <H2 className={'mt-3 font-semibold'}>Frontend developer</H2>
+        <P16 className={'mt-1 max-w-[300px] text-black !dark:text-gray-200'}>
           I create visually appealing and intuitive user interfaces for web
           applications.
         </P16>

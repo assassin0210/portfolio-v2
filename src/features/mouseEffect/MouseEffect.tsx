@@ -11,10 +11,10 @@ export const MouseEffect = ({ children }: { children: ReactNode }) => {
   }
   return (
     <div className="h-full" onMouseMove={handleMouseMove}>
-      <div className={'fixed h-full w-full'}>
+      <div className={'fixed h-full w-full overflow-x-hidden'}>
         <div
           className={`transition-colors derk: ${
-            theme === 'DARK' ? 'gradient-dark ' : 'bg-white'
+            theme === 'DARK' ? 'gradient-dark ' : 'hidden'
           } gradient blur-2xl`}
           style={{
             left: position.x - 300,

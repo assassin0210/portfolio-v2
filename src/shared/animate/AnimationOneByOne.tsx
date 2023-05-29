@@ -9,7 +9,7 @@ export const AnimationOneByOne = ({ children }: { children: ReactNode }) => {
     threshold: 0.5,
   })
   return (
-    <div ref={ref}>
+    <div ref={ref} className={''}>
       <AnimateFromSide
         variants={variants}
         initial={'hidden'}

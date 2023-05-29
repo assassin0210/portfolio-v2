@@ -5,7 +5,7 @@ import { blocks } from '@/shared/consts/sidebarMenu'
 
 export const HomePage = () => {
   return (
-    <main className=" min-h-screen sticky w-full hr:gap-10 pt-20">
+    <main className="min-h-screen  w-full hr:gap-10 pt-20">
       {blocks.map(({ id, Component }) => (
         <Element
           key={id}

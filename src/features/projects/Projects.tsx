@@ -53,7 +53,7 @@ const Slider = ({ images }: { images: any[] }) => {
   return (
     <div className="slider">
       <motion.div
-        className="slide-container h-[100px]"
+        className="slide-container h-[200px] laptop:h-[100px]"
         key={currentIndex}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

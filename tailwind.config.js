@@ -27,11 +27,13 @@ module.exports = {
         },
         mainGreen: '#00c976',
         green: {
-          200: '#58dad4',
+          200: '#00b2af',
+          300: '#0cb200',
         },
 
         // green: '#00c483',
         white: '#f2f8f2',
+        mainBg: '#eaeadc',
         gray: {
           50: '#d0d0d0',
           100: '#7587a1',

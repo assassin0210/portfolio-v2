@@ -1,10 +1,10 @@
 import './globals.css'
 
-import { Inter } from 'next/font/google'
+import { Varela } from 'next/font/google'
 
 import { ThemeProvider } from '@/widgets/providers/theme/ThemeProvider'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Varela({ subsets: ['latin'], weight: '400' })
 
 export const metadata = {
   title: 'Create Next App',
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang={'en'} className={'dark'}>
       <body
-        className={`${inter.className} overflow-x-hidden relative transition-all duration-500 dark:bg-mainBlue bg-white `}
+        className={`${inter.className} overflow-x-hidden relative transition-all duration-500 dark:bg-mainBlue bg-stone-50 `}
       >
         <ThemeProvider>{children}</ThemeProvider>
       </body>

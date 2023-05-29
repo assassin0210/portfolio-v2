@@ -13,29 +13,31 @@ export const AnimateFromSide = ({
   ...rest
 }: IProps) => {
   const [ref, inView] = useInView({
-    threshold: 0.5,
+    threshold: 0,
   })
   return (
-    <motion.div
-      ref={ref}
-      variants={{
-        hidden: { opacity: 0, x: types[type], y: -100, scale: 1.2 },
-        visible: { opacity: 1, x: 0, y: 0, scale: 1 },
-        exit: { opacity: 0, x: -100, scale: 0.8 },
-      }}
-      initial="hidden"
-      exit="exit"
-      animate={inView ? 'visible' : 'hidden'}
-      transition={{
-        duration: 0.5,
-        delay: 0.1,
-        type: 'spring',
-        stiffness: 100,
-      }}
-      {...rest}
-    >
-      {children}
-    </motion.div>
+    <div className={''}>
+      <motion.div
+        ref={ref}
+        variants={{
+          hidden: { opacity: 0, x: types[type], y: -100, scale: 1.2 },
+          visible: { opacity: 1, x: 0, y: 0, scale: 1 },
+          exit: { opacity: 0, x: -100, scale: 0.8 },
+        }}
+        initial="hidden"
+        exit="exit"
+        animate={inView ? 'visible' : 'hidden'}
+        transition={{
+          duration: 0.5,
+          delay: 0.1,
+          type: 'spring',
+          stiffness: 100,
+        }}
+        {...rest}
+      >
+        {children}
+      </motion.div>
+    </div>
   )
 }
 const types: Record<'left' | 'right', number> = {

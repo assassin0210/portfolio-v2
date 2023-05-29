@@ -29,9 +29,9 @@ export const ExperienceCard = ({
     <a
       href={href || ''}
       target={'_blank'}
-      className={`pb-5 pt-4 pl-5 pr-7 grid grid-cols-[150px_1fr] gap-10 transition duration-300 rounded-md ${
+      className={`pb-5 pt-4 pl-5 pr-7 grid laptop:grid-cols-[150px_1fr] gap-10 transition duration-300 rounded-md ${
         isHovered
-          ? 'dark:bg-blue-100 bg-amber-50 drop-shadow-lg'
+          ? 'dark:bg-blue-100 bg-stone-200 drop-shadow-lg'
           : `${unactive ? 'dark:opacity-40 opacity-60' : ''}`
       }`}
       rel="noreferrer"
@@ -44,26 +44,28 @@ export const ExperienceCard = ({
       <div>
         <H3
           className={`flex items-start gap-2 transition duration-300 font-semibold ${
-            isHovered ? '!text-green-200' : ''
+            isHovered ? 'dark:text-green-200 text-green-600' : ''
           }`}
         >
           <span className={''}>{linkName}</span>
           <div className={'relative w-3 h-5'}>
             <IconArrowUpRight
-              className={` w-3 absolute transition-all duration-300 top-0 right-0 ${
+              className={`w-3 absolute transition-all duration-300 top-0 right-0 ${
                 isHovered
-                  ? 'transform translate-x-1 -translate-y-1 scale-110 fill-green-200'
-                  : 'fill-white'
+                  ? 'transform translate-x-1 -translate-y-1 scale-110 dark:fill-green-200 fill-green-700'
+                  : 'fill-black dark:fill-white'
               }`}
             />
           </div>
         </H3>
         {position && (
-          <P16 className={'!text-gray-300 font-medium mt-2'}>{position}</P16>
+          <P16 className={'dark:text-gray-50 text-gray-700 font-medium mt-2'}>
+            {position}
+          </P16>
         )}
         {/*<P16 className={'!text-gray-300 font-medium '}>role</P16>*/}
         {description && (
-          <P14 className={'text-gray-100 mt-2'}>{description}</P14>
+          <P14 className={'text-gray-300 mt-2'}>{description}</P14>
         )}
         {githubLink && (
           <div
@@ -73,11 +75,9 @@ export const ExperienceCard = ({
               e.stopPropagation()
               window.open(githubLink, '_blank')
             }}
-            className={
-              'flex items-center p-2 w-fit hover:scale-125 transition mt-2'
-            }
+            className={'flex items-center p-1 w-fit hover:scale-125 transition'}
           >
-            <IconGithub className={'dark:fill-white w-7 opacity-75'} />
+            <IconGithub className={'dark:fill-white w-6 opacity-75'} />
           </div>
         )}
         {chips && (

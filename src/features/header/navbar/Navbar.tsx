@@ -29,7 +29,7 @@ const MenuItem = ({ id, active }: any) => {
       }`}
     >
       <div
-        className={`animated-bar dark:bg-white bg-gray-200  ${
+        className={`animated-bar dark:bg-white bg-green-600  ${
           active ? 'active' : 'group-hover:w-[60px]'
         }`}
       />
@@ -42,7 +42,7 @@ const MenuItem = ({ id, active }: any) => {
         duration={500}
       >
         <P14
-          className={'text-gray-200 dark:text-white font-semibold uppercase'}
+          className={'text-green-600 dark:text-white font-semibold uppercase'}
         >
           {' '}
           {id}

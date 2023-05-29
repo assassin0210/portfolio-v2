@@ -37,7 +37,7 @@ export const useListenerTheme = () => {
     }
   }, [divRef])
   return useMemo(
-    () => (className.toLowerCase() === 'dark' ? 'DARK' : 'LIGHT'),
+    () => (className.toLowerCase().includes('dark') ? 'DARK' : 'LIGHT'),
     [className]
   )
 }

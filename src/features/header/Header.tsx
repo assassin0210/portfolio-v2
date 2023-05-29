@@ -18,7 +18,7 @@ export const Header = () => {
           I create visually appealing and intuitive user interfaces for web
           applications.
         </P16>
-        <div className={'mt-16 mb-6'}>
+        <div className={'mt-16 hidden laptop:block'}>
           <Navbar />
         </div>
         <ThemeSwitcherButton />

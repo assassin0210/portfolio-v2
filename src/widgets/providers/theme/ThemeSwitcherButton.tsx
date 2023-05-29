@@ -1,14 +1,15 @@
 'use client'
 import React from 'react'
 
+import { Switch } from '@/widgets/providers/theme/Switch'
+
 import { getTheme } from './getTheme'
 import { setTheme } from './setTheme'
-import { Switch } from './TestSwitcher'
 import { useListenerTheme } from './useListenerTheme'
 
 export const ThemeSwitcherButton = () => {
   const theme = useListenerTheme()
-
+  console.log(theme)
   const handleSwitchTheme = () => {
     const currentTheme = getTheme()
     if (currentTheme === 'DARK') {

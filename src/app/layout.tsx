@@ -16,12 +16,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  // const cookieStore = cookies()
-
   return (
-    <html lang={'en'} className={'dark'}>
+    <html lang={'en'} className={'dark laptop:overflow-x-hidden '}>
       <body
-        className={`${inter.className} overflow-x-hidden relative transition-all duration-500 dark:bg-mainBlue bg-stone-50 `}
+        className={`${inter.className} transition-all duration-500 dark:bg-slate-900 bg-stone-50 `}
       >
         <ThemeProvider>{children}</ThemeProvider>
       </body>

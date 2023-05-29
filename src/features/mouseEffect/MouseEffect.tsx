@@ -11,7 +11,7 @@ export const MouseEffect = ({ children }: { children: ReactNode }) => {
   }
   return (
     <div className="h-full" onMouseMove={handleMouseMove}>
-      <div className={'fixed h-full w-full overflow-x-hidden'}>
+      <div className={'fixed h-full w-full hidden laptop:block'}>
         <div
           className={`transition-colors derk: ${
             theme === 'DARK' ? 'gradient-dark ' : 'hidden'

@@ -21,7 +21,7 @@ module.exports = {
         hr: '1536px',
       },
       colors: {
-        mainBlue: '#0e172a',
+        // mainBlue: '#0e172a',
         blue: {
           100: 'rgb(29,41,65)',
         },

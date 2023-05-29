@@ -10,7 +10,7 @@ import { P14 } from '@/shared/ui/Typography'
 export const Experience = () => {
   const { wrapperRef, hoverId, getProps } = useAnimateInTurn()
   return (
-    <section className={' mt-4 laptop:mt-20'}>
+    <section className={' mt-4 laptop:mt-20 relative'}>
       <SectionHeader>Experience</SectionHeader>
       <div className={'flex flex-col gap-4'} ref={wrapperRef}>
         {experienceData.map(({ date, organization, ...rest }, index) => (

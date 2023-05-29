@@ -13,7 +13,7 @@ export const Projects = () => {
   const { wrapperRef, hoverId, getProps } = useAnimateInTurn()
 
   return (
-    <div className={'flex flex-col gap-2'} ref={wrapperRef}>
+    <div className={'flex flex-col gap-2 relative'} ref={wrapperRef}>
       <SectionHeader>Projects</SectionHeader>
       {projectsData.map(({ images, projectName, ...rest }, index) => (
         <div {...getProps(index)} className={'w-full'} key={index}>

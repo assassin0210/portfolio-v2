@@ -5,7 +5,7 @@ import { P16 } from '@/shared/ui/Typography'
 
 export const About = () => {
   return (
-    <div className={''}>
+    <div className={'relative'}>
       <AnimateFromSide type={'right'}>
         <SectionHeader>About</SectionHeader>
         <div className={'space-y-3'}>

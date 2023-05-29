@@ -9,7 +9,7 @@ import { useListenerTheme } from './useListenerTheme'
 
 export const ThemeSwitcherButton = () => {
   const theme = useListenerTheme()
-  console.log(theme)
+
   const handleSwitchTheme = () => {
     const currentTheme = getTheme()
     if (currentTheme === 'DARK') {

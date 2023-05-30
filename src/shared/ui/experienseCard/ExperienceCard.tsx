@@ -47,7 +47,13 @@ export const ExperienceCard = ({
             isHovered ? 'dark:text-green-200 text-green-600' : ''
           }`}
         >
-          <span className={''}>{linkName}</span>
+          <span
+            className={`${
+              isHovered ? 'dark:text-green-200 text-green-600' : ''
+            }`}
+          >
+            {linkName}
+          </span>
           <div className={'relative w-3 h-5'}>
             <IconArrowUpRight
               className={`w-3 absolute transition-all duration-300 top-0 right-0 ${

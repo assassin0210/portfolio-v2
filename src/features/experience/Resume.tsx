@@ -29,7 +29,7 @@ export const Resume = () => {
             />
             <div
               className={
-                'h-[2px] absolute left-0 bottom-0 w-0 group-hover:w-full bg-green-200 transition-all duration-300'
+                'h-[2px] absolute left-0 bottom-0 w-0 group-hover:w-full dark:bg-green-200 bg-green-700 transition-all duration-300'
               }
             />
           </div>

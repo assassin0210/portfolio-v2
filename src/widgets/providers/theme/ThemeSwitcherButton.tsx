@@ -1,31 +1,32 @@
 'use client'
 import React from 'react'
 
+import { getThemeFromCookie } from '@/shared/helpers/getThemeFromCookie'
+import { setThemeToCookie } from '@/shared/helpers/setThemeToCookie'
+import { ITheme } from '@/shared/lib/types/common'
 import { Switch } from '@/widgets/providers/theme/Switch'
 
-import { getTheme } from './getTheme'
-import { setTheme } from './setTheme'
 import { useListenerTheme } from './useListenerTheme'
 
 export const ThemeSwitcherButton = () => {
   const theme = useListenerTheme()
 
   const handleSwitchTheme = () => {
-    const currentTheme = getTheme()
-    if (currentTheme === 'DARK') {
-      setTheme('LIGHT')
-    } else if (currentTheme === 'LIGHT') {
-      setTheme('DARK')
+    const currentTheme = getThemeFromCookie() as ITheme
+    if (currentTheme === 'dark') {
+      setThemeToCookie('light')
+    } else if (currentTheme === 'light') {
+      setThemeToCookie('dark')
     } else {
       const systemTheme = window.matchMedia('(prefers-color-scheme: dark)')
-        ? 'DARK'
-        : 'LIGHT'
-      setTheme(systemTheme === 'DARK' ? 'LIGHT' : 'DARK')
+        ? 'dark'
+        : 'light'
+      setThemeToCookie(systemTheme === 'dark' ? 'light' : 'dark')
     }
   }
   return (
     <Switch
-      isDarkMode={theme === 'DARK'}
+      isDarkMode={theme === 'dark'}
       handleSwitchTheme={handleSwitchTheme}
     />
   )

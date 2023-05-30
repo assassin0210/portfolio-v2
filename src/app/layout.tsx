@@ -1,9 +1,10 @@
 import './globals.css'
 
 import { Varela } from 'next/font/google'
+import { cookies } from 'next/headers'
 
 import { MouseEffect } from '@/features/mouseEffect/MouseEffect'
-import { ThemeProvider } from '@/widgets/providers/theme/ThemeProvider'
+import { COOKIES_KEYS } from '@/shared/consts/localeStogrageConsts'
 
 const inter = Varela({ subsets: ['latin'], weight: '400' })
 
@@ -17,15 +18,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const cookie = cookies().get(COOKIES_KEYS.THEME)?.value || 'dark'
+
   return (
-    <html lang={'en'} className={'dark laptop:overflow-x-hidden '}>
+    <html lang={'en'} className={`laptop:overflow-x-hidden ${cookie}`}>
       <link rel="icon" href="/sa16.svg" sizes="16x16x" type={'image/svg'} />
       <body
         className={`${inter.className} transition-all duration-500 dark:bg-slate-900 bg-stone-50 `}
       >
-        <ThemeProvider>
-          <MouseEffect>{children}</MouseEffect>
-        </ThemeProvider>
+        <MouseEffect>{children}</MouseEffect>
       </body>
     </html>
   )

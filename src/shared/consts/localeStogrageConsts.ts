@@ -1,3 +1,3 @@
-export const enum LOCALE_STORAGE {
+export const enum COOKIES_KEYS {
   THEME = 'THEME',
 }

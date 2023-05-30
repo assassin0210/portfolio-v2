@@ -1,12 +1,12 @@
 'use client'
 import { useEffect, useMemo, useState } from 'react'
 
-import { getTheme } from './getTheme'
+import { getThemeFromCookie } from '@/shared/helpers/getThemeFromCookie'
 
 export const useListenerTheme = () => {
-  const [className, setClassName] = useState('DARK')
+  const [className, setClassName] = useState('light')
   useEffect(() => {
-    typeof window !== 'undefined' && setClassName(getTheme())
+    typeof window !== 'undefined' && setClassName(getThemeFromCookie())
   }, [])
   const divRef =
     typeof document !== 'undefined' ? document.documentElement : null
@@ -37,7 +37,7 @@ export const useListenerTheme = () => {
     }
   }, [divRef])
   return useMemo(
-    () => (className.toLowerCase().includes('dark') ? 'DARK' : 'LIGHT'),
+    () => (className.includes('dark') ? 'dark' : 'light'),
     [className]
   )
 }

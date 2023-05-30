@@ -11,7 +11,7 @@ export const Header = () => {
   return (
     <header
       className={
-        'laptop:sticky top-0 pt-20 z-10 laptop:h-screen h-fit flex flex-col'
+        'laptop:sticky top-0 pt-20 z-10 laptop:h-screen h-fit flex flex-col justify-between'
       }
     >
       <AnimateFromSide type={'left'}>
@@ -30,9 +30,11 @@ export const Header = () => {
           <ThemeSwitcherButton />
         </div>
       </AnimateFromSide>
-      <div className={'mt-auto laptop:pb-20 pt-12'}>
-        <Socials />
-      </div>
+      <AnimateFromSide type={'left'}>
+        <div className={'mt-auto laptop:pb-20 pt-12'}>
+          <Socials />
+        </div>
+      </AnimateFromSide>
     </header>
   )
 }

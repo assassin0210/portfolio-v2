@@ -34,7 +34,7 @@ const Archive = () => {
 
             <div
               className={
-                'h-[2px]  absolute right-0 bottom-0 w-0 group-hover:w-full bg-green-600 transition-all duration-300'
+                'h-[2px]  absolute right-0 bottom-0 w-0 group-hover:w-full bg-green-600 dark:bg-green-200 transition-all duration-300'
               }
             />
           </div>

@@ -29,7 +29,7 @@ export const ExperienceCard = ({
     <a
       href={href || ''}
       target={'_blank'}
-      className={`pb-5 pt-4 pl-5 pr-7 grid laptop:grid-cols-[150px_1fr] gap-10 transition duration-300 rounded-md ${
+      className={`pb-5 group pt-4 pl-5 pr-7 grid laptop:grid-cols-[150px_1fr] gap-10 transition duration-300 rounded-md ${
         isHovered
           ? 'dark:bg-blue-100 bg-stone-200 drop-shadow-lg'
           : `${unactive ? 'dark:opacity-40 opacity-60' : ''}`
@@ -44,12 +44,16 @@ export const ExperienceCard = ({
       <div>
         <H3
           className={`flex items-start gap-2 transition duration-300 font-semibold ${
-            isHovered ? 'dark:text-green-200 text-green-600' : ''
+            isHovered
+              ? 'group-hover:dark:text-green-200 group-hover:text-green-600'
+              : ''
           }`}
         >
           <span
             className={`${
-              isHovered ? 'dark:text-green-200 text-green-600' : ''
+              isHovered
+                ? 'dark:text-green-200 text-green-600 transition duration-300'
+                : ''
             }`}
           >
             {linkName}

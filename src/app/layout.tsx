@@ -19,8 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang={'en'} className={'dark laptop:overflow-x-hidden '}>
-      <link rel="icon" href="/favicon32.png" sizes="32x32" type="image/png" />
-      <link rel="icon" href="/favicon16.png" sizes="16x16" type="image/png" />
+      <link rel="icon" href="/sa16.svg" sizes="16x16x" type={'image/svg'} />
       <body
         className={`${inter.className} transition-all duration-500 dark:bg-slate-900 bg-stone-50 `}
       >

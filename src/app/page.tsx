@@ -7,9 +7,7 @@ export default function Home() {
     <>
       <MouseEffect>
         <div className={'grid container laptop:grid-cols-2 gap-10'}>
-          <header className={'laptop:sticky top-0 h-fit pt-20 z-10'}>
-            <Header />
-          </header>
+          <Header />
           <HomePage />
         </div>
       </MouseEffect>

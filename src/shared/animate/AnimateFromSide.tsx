@@ -6,10 +6,12 @@ import { useInView } from 'react-intersection-observer'
 interface IProps extends AnimationProps {
   children: ReactNode
   type: 'left' | 'right'
+  className?: string
 }
 export const AnimateFromSide = ({
   children,
   type = 'right',
+  className,
   ...rest
 }: IProps) => {
   const [ref, inView] = useInView({
@@ -46,6 +48,7 @@ export const AnimateFromSide = ({
         type: 'spring',
         stiffness: 100,
       }}
+      className={className}
       {...rest}
     >
       {children}

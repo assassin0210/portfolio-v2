@@ -22,6 +22,15 @@ export default function RootLayout({
 
   return (
     <html lang={'en'} className={`laptop:overflow-x-hidden ${cookie}`}>
+      <meta property="og:title" content="Social Title for Cool Page" />
+      <meta
+        property="og:description"
+        content="And a social description for our cool page"
+      />
+      <meta
+        property="og:image"
+        content="https://example.com/images/cool-page.jpg"
+      />
       <link rel="icon" href="/sa16.svg" sizes="16x16x" type={'image/svg'} />
       <body
         className={`${inter.className} transition-all duration-500 dark:bg-slate-900 bg-stone-50 `}

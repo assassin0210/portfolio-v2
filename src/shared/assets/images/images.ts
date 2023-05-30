@@ -9,6 +9,7 @@ import imgLightTheme from './lightTheme.png'
 import imgMusic1 from './music1.png'
 import imgMusic2 from './music2.png'
 import imgMusic3 from './music3.png'
+import imgMy from './my.jpeg'
 import imgOldPortfolio1 from './old_portfolio_1.png'
 import imgOldPortfolio2 from './old_portfolio_2.png'
 import imgPizza from './pizza.png'
@@ -34,6 +35,7 @@ export {
   imgMusic1,
   imgMusic2,
   imgMusic3,
+  imgMy,
   imgOldPortfolio1,
   imgOldPortfolio2,
   imgPizza,

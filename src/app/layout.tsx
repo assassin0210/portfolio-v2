@@ -5,7 +5,7 @@ import { Varela } from 'next/font/google'
 import { cookies } from 'next/headers'
 
 import { MouseEffect } from '@/features/mouseEffect/MouseEffect'
-import { imgCapture1 } from '@/shared/assets/images/images'
+import { imgMy } from '@/shared/assets/images/images'
 import { COOKIES_KEYS } from '@/shared/consts/localeStogrageConsts'
 
 const inter = Varela({ subsets: ['latin'], weight: '400' })
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Alexandr Sokolov',
     description: 'React.js and Next.js Frontend developer',
-    images: imgCapture1.src,
+    images: imgMy.src,
   },
 }
 

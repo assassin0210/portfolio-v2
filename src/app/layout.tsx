@@ -1,16 +1,23 @@
 import './globals.css'
 
+import { Metadata } from 'next'
 import { Varela } from 'next/font/google'
 import { cookies } from 'next/headers'
 
 import { MouseEffect } from '@/features/mouseEffect/MouseEffect'
+import { imgCapture1 } from '@/shared/assets/images/images'
 import { COOKIES_KEYS } from '@/shared/consts/localeStogrageConsts'
 
 const inter = Varela({ subsets: ['latin'], weight: '400' })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Alexandr Sokolov',
-  description: 'React.js and Next.js Frontend developer Sokolov Alexandr',
+  description: 'React.js and Next.js Frontend developer',
+  openGraph: {
+    title: 'Alexandr Sokolov',
+    description: 'React.js and Next.js Frontend developer',
+    images: imgCapture1.src,
+  },
 }
 
 export default function RootLayout({
@@ -22,15 +29,6 @@ export default function RootLayout({
 
   return (
     <html lang={'en'} className={`laptop:overflow-x-hidden ${cookie}`}>
-      <meta property="og:title" content="Social Title for Cool Page" />
-      <meta
-        property="og:description"
-        content="And a social description for our cool page"
-      />
-      <meta
-        property="og:image"
-        content="https://example.com/images/cool-page.jpg"
-      />
       <link rel="icon" href="/sa16.svg" sizes="16x16x" type={'image/svg'} />
       <body
         className={`${inter.className} transition-all duration-500 dark:bg-slate-900 bg-stone-50 `}

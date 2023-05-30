@@ -1,6 +1,8 @@
 import {
   IconGithub,
   IconLinkedin,
+  IconMail,
+  IconPhone,
   IconTelegram,
 } from '@/shared/assets/icons/icons'
 
@@ -29,5 +31,13 @@ const socialNetworks = [
   {
     Icon: IconTelegram,
     link: 'https://t.me/sokol_dev',
+  },
+  {
+    Icon: IconPhone,
+    link: 'tel:+79777509711',
+  },
+  {
+    Icon: IconMail,
+    link: 'mailto:speedo210@gmail.com',
   },
 ]

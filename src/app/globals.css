@@ -8,7 +8,13 @@
     transition: width 0.3s ease-in-out
 
 }
+html ::-webkit-scrollbar {
+    width: 0.5rem
+}
 
+html ::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+}
 
 .animated-bar.active {
     width: 70px;

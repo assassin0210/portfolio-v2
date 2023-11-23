@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   const cookie = cookies().get(COOKIES_KEYS.THEME)?.value || 'dark'
-  const promise = new Promise((resolve, reject) => {
+  const promise = new Promise((resolve) => {
     resolve(2)
   })
   promise.then(

@@ -26,6 +26,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   const cookie = cookies().get(COOKIES_KEYS.THEME)?.value || 'dark'
+  const promise = new Promise((resolve, reject) => {
+    resolve(2)
+  })
+  promise.then(
+    () => null,
+    () => null
+  )
 
   return (
     <html lang={'en'} className={`laptop:overflow-x-hidden ${cookie}`}>

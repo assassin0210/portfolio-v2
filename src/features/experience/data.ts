@@ -1,6 +1,23 @@
 export const experienceData = [
   {
-    date: 'Feb 2022 - Apr 2023',
+    date: 'Aug 2023 - today',
+    organization: 'School bus manager',
+    href: 'https://schoolbusmanager.com/',
+    position: 'Frontend Engineer',
+    description:
+      'Development of a platform for school bus administration . Tracking on the map, lists, cancellations and postponements, and more.',
+    chips: ['React.js', 'less', 'RTKQuery', 'typescript'],
+  },
+  {
+    date: 'Jun 2022 - Aug 2023',
+    organization: 'Aeroidea',
+    href: 'https://aeroidea.ru/',
+    position: 'Frontend Engineer',
+    description: 'Development of e-comers platform and custom development',
+    chips: ['Next.js', 'zustand', 'TanStack Query', 'RTKQuery', 'mantine'],
+  },
+  {
+    date: 'Feb 2021 - Apr 2022',
     organization: 'Zoftify',
     href: 'https://zoftify.com/',
     position: 'Frontend Engineer',
@@ -9,7 +26,7 @@ export const experienceData = [
     chips: ['Next.js', 'Tailwind', 'TypeScript', 'Redux-toolkit'],
   },
   {
-    date: 'Jul 2020 - Feb 2022',
+    date: 'Jul 2020 - Feb 2021',
     position: 'Frontend Developer',
     href: 'https://www.helium10.com/',
     organization: 'Helium10',
@@ -23,15 +40,5 @@ export const experienceData = [
       're-atom',
       'Highcharts',
     ],
-  },
-
-  {
-    date: 'Feb 2020 - Jul',
-    organization: 'DeskAlert',
-    href: 'https://www.alert-software.com/',
-    position: 'Frontend Engineer',
-    description:
-      'Development of new functionality.Correction and work with the old code in the project. Switching the application to TypeScript',
-    chips: ['React.js', 'SCSS', 'TypeScript', 'Redux', 'Material Ui'],
   },
 ]

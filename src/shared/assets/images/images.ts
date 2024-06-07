@@ -14,14 +14,18 @@ import imgOldPortfolio1 from './old_portfolio_1.png'
 import imgOldPortfolio2 from './old_portfolio_2.png'
 import imgPizza from './pizza.png'
 import imgPizzaC from './pizzaC.png'
+import prosv1 from './prosv1.png'
+import prosv2 from './prosv2.png'
+import prosv3 from './prosv3.png'
 import imgRelines1 from './relines1.png'
 import imgRelines2 from './relines2.png'
+import sbm1 from './sbm1.png'
+import sbm2 from './sbm2.png'
+import sbm3 from './sbm3.png'
+import sbm4 from './sbm4.png'
 import imgTesla1 from './tesla1.png'
 import imgTesla2 from './tesla2.png'
 import imgTesla3 from './tesla2.png'
-import imgWaxom1 from './waxom1.png'
-import imgWaxom2 from './waxom2.png'
-import imgWaxom3 from './waxom3.png'
 
 export {
   imgCapture1,
@@ -45,7 +49,11 @@ export {
   imgTesla1,
   imgTesla2,
   imgTesla3,
-  imgWaxom1,
-  imgWaxom2,
-  imgWaxom3,
+  prosv1,
+  prosv2,
+  prosv3,
+  sbm1,
+  sbm2,
+  sbm3,
+  sbm4,
 }

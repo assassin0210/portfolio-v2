@@ -7,7 +7,7 @@ export const Resume = () => {
     <div className={'overflow-hidden'}>
       <AnimationOneByOne>
         <a
-          href={'Resume_Alexander_Sokolov.pdf'}
+          href={'Alexandr_Sokolov_FrontendDeveloper.pdf'}
           target="_blank"
           rel="noopener noreferrer"
         >

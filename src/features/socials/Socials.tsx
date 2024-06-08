@@ -5,10 +5,11 @@ import {
   IconPhone,
   IconTelegram,
 } from '@/shared/assets/icons/icons'
+import { P14 } from '@/shared/ui/Typography'
 
 export const Socials = () => {
   return (
-    <div className={'flex gap-5'}>
+    <div className={'flex gap-5 items-center'}>
       {socialNetworks.map(({ link, Icon }) => (
         <a key={link} href={link} target={'_blank'} rel="noreferrer">
           <Icon
@@ -18,6 +19,13 @@ export const Socials = () => {
           />
         </a>
       ))}
+      <a
+        href={'Alexandr_Sokolov_FrontendDeveloper.pdf'}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <P14 className={'!text-white'}> Download Resume</P14>
+      </a>
     </div>
   )
 }

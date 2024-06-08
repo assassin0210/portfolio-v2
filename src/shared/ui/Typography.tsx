@@ -3,9 +3,10 @@ import { ReactNode } from 'react'
 import { TColorsType } from '../lib/types/common'
 
 interface IProps {
-  children: ReactNode
+  children?: ReactNode
   className?: string
   color?: TColorsType
+  html?: string
 }
 export const H1 = ({ children, className = '' }: IProps) => {
   return (
@@ -39,9 +40,10 @@ export const P16 = ({ children, className = '' }: IProps) => {
     </p>
   )
 }
-export const P14 = ({ children, className = '' }: IProps) => {
+export const P14 = ({ children, className = '', html }: IProps) => {
   return (
     <p
+      dangerouslySetInnerHTML={html ? { __html: html } : undefined}
       className={`text-black dark:text-gray-100 text-[14px] font-medium ${className}`}
     >
       {children}

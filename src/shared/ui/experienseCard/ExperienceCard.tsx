@@ -21,7 +21,7 @@ export const ExperienceCard = ({
   chips?: string[]
   linkName: string
   position?: string
-  description?: string
+  description?: string | string[]
   href?: string
   githubLink?: string
 }) => {
@@ -73,10 +73,18 @@ export const ExperienceCard = ({
             {position}
           </P16>
         )}
-        {/*<P16 className={'!text-gray-300 font-medium '}>role</P16>*/}
-        {description && (
-          <P14 className={'text-gray-300 mt-2'}>{description}</P14>
-        )}
+        {description &&
+          (typeof description === 'string' ? (
+            <P14 html={description} className={'text-gray-100 mt-2'} />
+          ) : (
+            <ol className="list-disc text-gray-100">
+              {description.map((item, index) => (
+                <li key={index}>
+                  <P14 className={'text-gray-100 mt-2'}>{item}</P14>
+                </li>
+              ))}
+            </ol>
+          ))}
         {githubLink && (
           <div
             role={'button'}

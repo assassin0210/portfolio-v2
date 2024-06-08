@@ -1,0 +1,5 @@
+export const intExpData = [
+  'Project migration to new technologies: Transitioning projects to modern technologies such as TypeScript, Vite, and Next.js 13 presented significant challenges due to the large amount of legacy code and dependencies. This required not only technical expertise but also strategic planning and teamwork to ensure a smooth transition without disrupting application functionality.',
+  'Application performance optimization: Working with projects that had large datasets and complex structures necessitated a deep understanding of performance optimization principles. Implementing virtual scrolling, lazy loading, and data caching significantly improved application performance and responsiveness.',
+  'Implementation of complex functional requirements: Developing administrative panels with dynamic content creation and configuration capabilities, as well as a system for monitoring prices and advertising campaigns, posed complex challenges that required not only a deep understanding of business logic but also careful user interface design and development.',
+]

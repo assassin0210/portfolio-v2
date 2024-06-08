@@ -1,5 +1,6 @@
 import { About } from '@/features/about/About'
 import { Experience } from '@/features/experience/Experience'
+import { InterestingExperience } from '@/features/interestingExperience/InterestingExperience'
 import { Projects } from '@/features/projects/Projects'
 
 export const blocks = [
@@ -12,6 +13,11 @@ export const blocks = [
     id: 'experience',
     label: 'Experience',
     Component: Experience,
+  },
+  {
+    id: 'interesting_experience',
+    label: 'Interesting Experience',
+    Component: InterestingExperience,
   },
   {
     id: 'projects',

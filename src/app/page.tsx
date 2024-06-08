@@ -3,7 +3,7 @@ import { HomePage } from '@/features/homePage/HomePage'
 
 export default async function Home() {
   return (
-    <div className={'grid container laptop:grid-cols-2 gap-10'}>
+    <div className={'grid container laptop:grid-cols-[auto_1fr] gap-16'}>
       <Header />
       <HomePage />
     </div>

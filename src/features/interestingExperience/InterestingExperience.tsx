@@ -6,7 +6,7 @@ import { SectionHeader } from '@/shared/ui/SectionHeader'
 import { H3, P14 } from '@/shared/ui/Typography'
 
 export const InterestingExperience = () => {
-  const { wrapperRef, hoverId, getProps } = useAnimateInTurn()
+  const { wrapperRef, getProps } = useAnimateInTurn()
   return (
     <AnimationOneByOne>
       <section className={' mt-4 laptop:mt-20 relative'}>

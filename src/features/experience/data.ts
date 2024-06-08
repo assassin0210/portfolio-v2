@@ -39,8 +39,13 @@ export const experienceData = [
     organization: 'Zoftify',
     href: 'https://zoftify.com/',
     position: 'Frontend Engineer',
-    description:
-      'I developed a web application that allowed professionals of any level to offer their services, while making it easy for clients to find suitable experts for their tasks. My task involved creating admin panels with a user-friendly interface and analytics for fine-tuning both client-facing products and internal processes. I aimed to provide users with easy access to functionality, enhance their interaction experience, and provide detailed analytical data for informed decision-making.',
+    description: [
+      'Made significant contributions to the development of a web application using cutting-edge technologies and tools, including the Next.js framework. Actively involved in all stages of development, from design to implementation and optimization.',
+      'Meticulously optimized bundle size and page loading speed, resulting in improved performance and user experience of the application.',
+      'Created and customized administrative panels for both internal company projects and clients. The flexible and intuitive interface of the administrative panels allowed users to easily manage content and customize application settings.',
+      'Actively participated in the development of an innovative application aimed at providing various specialized services such as massage, hairdressing, and more. This application demonstrates my ability to implement complex functional requirements and adapt to various business scenarios.',
+      'In addition to core technologies like Stripe for payments, Chart.js for data visualization, and Tailwind for styling, I continuously strive to learn and implement new tools and approaches to ensure high quality and innovation in my work.',
+    ],
     chips: ['Next.js', 'Tailwind', 'TypeScript', 'Redux-toolkit'],
   },
   {
@@ -48,8 +53,13 @@ export const experienceData = [
     position: 'Frontend Developer',
     href: 'https://www.helium10.com/',
     organization: 'Helium10',
-    description:
-      "Provided support for large company projects and developed new ones. Developed the company's UI libraries and created a user interface for the Amazon seller app. Designed a system to monitor the history of goods prices, competitor prices, and set up advertising campaigns down to keywords. Contributed to the creation of a custom component library, including testing and documentation through a storybook. Took part to the development tools for Amazon sellers (Adtomic)",
+    description: [
+      'Provided support for large company projects and developed new ones.',
+      "Developed the company's UI libraries and created a user interface for the Amazon seller app.",
+      'Designed a system to monitor the history of goods prices, competitor prices, and set up advertising campaigns down to keywords. This enabled users to effectively manage their business on the Amazon platform and increase competitiveness.',
+      "Contributed to the creation of a custom component library, including testing and documentation through a storybook. This ensured high quality and stability of the application's user interface.",
+      'Participated in the development of tools for Amazon sellers (Adtomic), providing users with convenience and efficiency in sales on the platform.',
+    ],
     chips: [
       'React.js',
       'Styled-component',

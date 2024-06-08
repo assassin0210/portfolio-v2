@@ -1,4 +1,5 @@
 'use client'
+import { ReactNode } from 'react'
 import { Link } from 'react-scroll'
 
 import { navBarBlocks } from '@/shared/consts/sidebarMenu'
@@ -21,7 +22,15 @@ export const Navbar = () => {
   )
 }
 
-const MenuItem = ({ id, active }: any) => {
+const MenuItem = ({
+  id,
+  active,
+  children,
+}: {
+  id: string
+  active: boolean
+  children: ReactNode
+}) => {
   return (
     <li
       className={`flex items-center transition gap-2 ${
@@ -44,8 +53,7 @@ const MenuItem = ({ id, active }: any) => {
         <P14
           className={'text-green-600 dark:text-white font-semibold uppercase'}
         >
-          {' '}
-          {id}
+          {children}
         </P14>
       </Link>
     </li>

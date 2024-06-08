@@ -49,7 +49,7 @@ export const experienceData = [
     chips: ['Next.js', 'Tailwind', 'TypeScript', 'Redux-toolkit'],
   },
   {
-    date: 'Jul 2020 - Feb 2021',
+    date: 'Jul 2019 - Feb 2021',
     position: 'Frontend Developer',
     href: 'https://www.helium10.com/',
     organization: 'Helium10',

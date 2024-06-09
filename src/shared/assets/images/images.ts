@@ -26,6 +26,7 @@ import sbm4 from './sbm4.png'
 import imgTesla1 from './tesla1.png'
 import imgTesla2 from './tesla2.png'
 import imgTesla3 from './tesla2.png'
+import todoList1 from './todoList1.png'
 
 export {
   imgCapture1,
@@ -56,4 +57,5 @@ export {
   sbm2,
   sbm3,
   sbm4,
+  todoList1,
 }

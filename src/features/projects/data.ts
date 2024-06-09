@@ -24,9 +24,21 @@ import {
   sbm2,
   sbm3,
   sbm4,
+  todoList1,
 } from '@/shared/assets/images/images'
 
 export const projectsData = [
+  {
+    href: 'https://todo-list.alexsool.dev/',
+    githubLink: 'https://github.com/assassin0210/todo-list',
+    projectName: 'TodoList',
+    org: '-',
+    year: '2024',
+    images: [todoList1, todoList1, todoList1],
+    description:
+      "One of the test tasks. Todo list. Items are added with the 'Enter' key after entering the title (duplicate titles are not added). It's possible to view active and completed todos, and delete all completed ones with a single button.",
+    chips: ['React.js', 'TypeScript', 'scss', 'jest'],
+  },
   {
     href: 'https://app.waypoint.schoolbusmanager.com/client/signin',
     githubLink: '',

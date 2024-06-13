@@ -1,6 +1,9 @@
 import imgCapture1 from './capture1.png'
 import imgCapture2 from './capture2.png'
 import imgCapture3 from './capture3.png'
+import cocktails1 from './cocktails1.png'
+import cocktails2 from './cocktails2.png'
+import cocktails3 from './cocktails3.png'
 import imgDarkTheme from './darkTheme.png'
 import imgGame1 from './game1.png'
 import imgGame2 from './game2.png'
@@ -29,6 +32,9 @@ import imgTesla3 from './tesla2.png'
 import todoList1 from './todoList1.png'
 
 export {
+  cocktails1,
+  cocktails2,
+  cocktails3,
   imgCapture1,
   imgCapture2,
   imgCapture3,

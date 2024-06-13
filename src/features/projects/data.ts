@@ -1,4 +1,7 @@
 import {
+  cocktails1,
+  cocktails2,
+  cocktails3,
   imgCapture1,
   imgCapture2,
   imgCapture3,
@@ -28,6 +31,17 @@ import {
 } from '@/shared/assets/images/images'
 
 export const projectsData = [
+  {
+    href: 'https://cocktails.alexsool.dev/kir',
+    githubLink: 'https://github.com/assassin0210/cocktails',
+    projectName: 'Cocktails',
+    org: '-',
+    year: '2024',
+    images: [cocktails1, cocktails2, cocktails3],
+    description:
+      'A test task in which you need to schematically distribute information about cocktails. I get cocktails from Api and get the key using the parameter in the url',
+    chips: ['React', 'TypeScript', 'scss', 'jest', 'vite', 'RTKQuery'],
+  },
   {
     href: 'https://todo-list.alexsool.dev/',
     githubLink: 'https://github.com/assassin0210/todo-list',

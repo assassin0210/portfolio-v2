@@ -19,11 +19,7 @@ export const Socials = () => {
           />
         </a>
       ))}
-      <a
-        href={'Alexandr_Sokolov_FrontendDeveloper.pdf'}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href={'Alex_Sokolov.pdf'} target="_blank" rel="noopener noreferrer">
         <P14 className={'!text-white'}> Download Resume</P14>
       </a>
     </div>

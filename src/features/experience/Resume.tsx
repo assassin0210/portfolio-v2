@@ -6,11 +6,7 @@ export const Resume = () => {
   return (
     <div className={'overflow-hidden'}>
       <AnimationOneByOne>
-        <a
-          href={'Alexandr_Sokolov_FrontendDeveloper.pdf'}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={'Alex_Sokolov.pdf'} target="_blank" rel="noopener noreferrer">
           <div
             className={
               'relative py-2 px-2 group flex items-center gap-3 cursor-pointer my-10 mb-20 w-fit'

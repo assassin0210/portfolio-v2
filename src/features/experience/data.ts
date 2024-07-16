@@ -1,23 +1,6 @@
 export const experienceData = [
   {
-    date: 'Aug 2023 - today',
-    organization: 'School bus manager',
-    href: 'https://schoolbusmanager.com/',
-    position: 'Frontend Engineer',
-    description: [
-      'Maintained and refactored existing legacy code (class components), fixed bugs, and developed new features.',
-      'Integrated TypeScript and migrated the project to Vite, which required updating or replacing numerous outdated npm packages.',
-      'Updated Redux and transitioned to RTKQuery. Conducted a seamless migration by using new selectors and old reducers to ensure stable application performance.',
-      'Collaborated closely with backend developers to streamline API integrations, reducing data fetch times and improving overall application responsiveness.',
-      "Converted styles from Less preprocessor to CSS modules. Reorganized styles and implemented reusable UI components. Introduced lazy loading for most pages, reducing the main chunk size by 75% and significantly speeding up the application's loading time.",
-      'Redesigned the modal windows system. Implemented a single container for all modals managed through Zustand, simplifying debugging and speeding up the creation of new modals.',
-      'Optimized the performance of pages rendering large lists (500+ items) by introducing virtual scrolling, which significantly increased performance.',
-      'Spearheaded the introduction of a modern design system, ensuring consistent UI/UX across the application, resulting in improved user satisfaction and engagement.',
-    ],
-    chips: ['React.js', 'less', 'RTKQuery', 'typescript', 'Vite'],
-  },
-  {
-    date: 'Jun 2022 - Aug 2023',
+    date: 'Aug 2023 - Jul 2024',
     organization: 'Aeroidea',
     href: 'https://aeroidea.ru/',
     position: 'Frontend Engineer',
@@ -35,7 +18,7 @@ export const experienceData = [
     chips: ['Next.js', 'zustand', 'TanStack Query', 'RTKQuery', 'mantine'],
   },
   {
-    date: 'Feb 2021 - Apr 2022',
+    date: 'Feb 2022 - Sep 2023',
     organization: 'Zoftify',
     href: 'https://zoftify.com/',
     position: 'Frontend Engineer',
@@ -49,7 +32,7 @@ export const experienceData = [
     chips: ['Next.js', 'Tailwind', 'TypeScript', 'Redux-toolkit'],
   },
   {
-    date: 'Jul 2019 - Feb 2021',
+    date: 'Jul 2020 - Feb 2022',
     position: 'Frontend Developer',
     href: 'https://www.helium10.com/',
     organization: 'Helium10',
@@ -68,5 +51,13 @@ export const experienceData = [
       're-atom',
       'Highcharts',
     ],
+  },
+  {
+    date: 'Jan 2020 - Jul',
+    organization: 'DeskAlert',
+    position: 'Frontend Engineer',
+    description:
+      'Development of new functionality.Correction and work with the old code in the project. Switching the application to TypeScript',
+    chips: ['React.js', 'SCSS', 'TypeScript', 'Redux', 'Material Ui'],
   },
 ]

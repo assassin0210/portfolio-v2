@@ -23,10 +23,6 @@ import {
   prosv1,
   prosv2,
   prosv3,
-  sbm1,
-  sbm2,
-  sbm3,
-  sbm4,
   todoList1,
 } from '@/shared/assets/images/images'
 
@@ -53,17 +49,7 @@ export const projectsData = [
       "One of the test tasks. Todo list. Items are added with the 'Enter' key after entering the title (duplicate titles are not added). It's possible to view active and completed todos, and delete all completed ones with a single button.",
     chips: ['React.js', 'TypeScript', 'scss', 'jest'],
   },
-  {
-    href: 'https://app.waypoint.schoolbusmanager.com/client/signin',
-    githubLink: '',
-    projectName: 'School bus manager',
-    org: 'SBM',
-    year: '2024',
-    images: [sbm1, sbm2, sbm3, sbm4],
-    description:
-      'Imagine a magical journey into the world of photography, where every camera click transforms into living images. This stunning and animated portfolio website for a photographer takes you to a mesmerizing space where graceful transitions between sections and animated effects create an impressive and unforgettable experience. The stylish design, combined with breathtaking photographs, allows visitors to immerse themselves in your art and feel its magic.',
-    chips: ['React.js', 'less', 'RTKQuery'],
-  },
+
   {
     href: 'https://prosv.ru/',
     githubLink: '',
@@ -184,14 +170,14 @@ export const projectsData = [
     year: '2022',
     chips: ['React', 'Styled components', 'zustand'],
   },
-  {
-    href: 'https://admin.readyhubb.com',
-    githubLink: '',
-    org: 'Zoftify',
-    projectName: 'Readyhubb admin panel',
-    year: '2023',
-    chips: ['Next.js', 'Tailwind', 'Tippyjs'],
-  },
+  // {
+  //   href: 'https://admin.readyhubb.com',
+  //   githubLink: '',
+  //   org: 'Zoftify',
+  //   projectName: 'Readyhubb admin panel',
+  //   year: '2023',
+  //   chips: ['Next.js', 'Tailwind', 'Tippyjs'],
+  // },
   {
     href: 'https://readyhubb.com',
     githubLink: '',
@@ -208,14 +194,14 @@ export const projectsData = [
     year: '2022',
     chips: ['Next.js', 'Tailwind'],
   },
-  {
-    href: '',
-    githubLink: '',
-    projectName: 'Krumod admin panel',
-    org: 'Zoftify',
-    year: '2022',
-    chips: ['Next.js', 'Tailwind'],
-  },
+  // {
+  //   href: '',
+  //   githubLink: '',
+  //   projectName: 'Krumod admin panel',
+  //   org: 'Zoftify',
+  //   year: '2022',
+  //   chips: ['Next.js', 'Tailwind'],
+  // },
   {
     href: 'https://monitor.zoftify.com',
     githubLink: '',

@@ -20,7 +20,7 @@ export const Socials = () => {
         </a>
       ))}
       <a href={'Alex_Sokolov.pdf'} target="_blank" rel="noopener noreferrer">
-        <P14 className={'!text-white'}> Download Resume</P14>
+        <P14 className={'dark:!text-white'}> Download Resume</P14>
       </a>
     </div>
   )

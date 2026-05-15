@@ -1,31 +1,45 @@
 'use client'
-import { ReactNode, useMemo, useState } from 'react'
+import { memo, ReactNode, useEffect, useRef } from 'react'
 
-import { useListenerTheme } from '@/widgets/providers/theme/useListenerTheme'
+import { useTheme } from '@/widgets/providers/theme/ThemeProvider'
 
-export const MouseEffect = ({ children }: { children: ReactNode }) => {
-  const [position, setPosition] = useState({ x: '0px', y: '0px' })
-  const theme = useListenerTheme()
+const GRADIENT =
+  'radial-gradient(600px at var(--mx, -1000px) var(--my, -1000px), rgba(29, 78, 216, 0.15), transparent 80%)'
 
-  const style = useMemo(
-    () =>
-      `radial-gradient(600px at ${position.x} ${position.y}, rgba(29, 78, 216, 0.15), transparent 80%)`,
-    [position.x, position.y]
-  )
-  const handleMouseMove = (event: React.MouseEvent) => {
-    setPosition({ x: event.clientX + 'px', y: event.clientY + 'px' })
-  }
+export const MouseEffect = memo(({ children }: { children: ReactNode }) => {
+  const theme = useTheme()
+  const overlayRef = useRef<HTMLDivElement>(null)
+  const rafRef = useRef<number>(0)
+
+  useEffect(() => {
+    if (theme !== 'dark') return
+
+    const handleMouseMove = (event: MouseEvent) => {
+      const x = event.clientX
+      const y = event.clientY
+      cancelAnimationFrame(rafRef.current)
+      rafRef.current = requestAnimationFrame(() => {
+        overlayRef.current?.style.setProperty('--mx', `${x}px`)
+        overlayRef.current?.style.setProperty('--my', `${y}px`)
+      })
+    }
+
+    window.addEventListener('mousemove', handleMouseMove, { passive: true })
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove)
+      cancelAnimationFrame(rafRef.current)
+    }
+  }, [theme])
+
   return (
-    <div className="h-full " onMouseMove={handleMouseMove}>
+    <>
       <div
-        className={
-          'dark:bg-current fixed h-full w-full pointer-events-none z-[11]  bg-none'
-        }
-        style={
-          theme === 'dark' ? { background: style } : { background: 'none' }
-        }
+        ref={overlayRef}
+        aria-hidden
+        className="fixed inset-0 pointer-events-none z-[11] print:hidden"
+        style={theme === 'dark' ? { background: GRADIENT } : undefined}
       />
       {children}
-    </div>
+    </>
   )
-}
+})

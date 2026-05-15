@@ -1,50 +1,48 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
-export const useNavScroll = (
-  className: string,
-  initialActiveClassName: string
-) => {
-  const [activeMenu, setActiveMenu] = useState(initialActiveClassName)
+const VISIBILITY_THRESHOLD_RATIO = 0.4
 
-  const handleScroll = useCallback(() => {
-    const prevScrollPos = window.pageYOffset
-    const blocks = Array.from(document.getElementsByClassName('content-block'))
-    let activeBlockId = initialActiveClassName
-    const currentScrollPos = window.pageYOffset
-    const windowHeight = window.innerHeight
-    const visibilityThreshold = 0.4 * windowHeight
-
-    if (currentScrollPos > prevScrollPos) {
-      for (let i = blocks.length - 1; i >= 0; i--) {
-        const rect = blocks[i].getBoundingClientRect()
-
-        if (rect.top <= visibilityThreshold) {
-          activeBlockId = blocks[i].id
-          break
-        }
-      }
-    } else {
-      for (let i = 0; i < blocks.length; i++) {
-        const rect = blocks[i].getBoundingClientRect()
-
-        if (rect.bottom >= visibilityThreshold) {
-          activeBlockId = blocks[i].id
-          break
-        }
-      }
-    }
-
-    setActiveMenu(activeBlockId)
-  }, [initialActiveClassName])
+export const useNavScroll = (initialActiveId: string) => {
+  const [activeId, setActiveId] = useState(initialActiveId)
+  const prevScrollRef = useRef(0)
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
+    const handleScroll = () => {
+      const blocks = Array.from(
+        document.getElementsByClassName('content-block')
+      )
+      if (blocks.length === 0) return
+
+      const currentScroll = window.scrollY
+      const isScrollingDown = currentScroll > prevScrollRef.current
+      prevScrollRef.current = currentScroll
+
+      const threshold = VISIBILITY_THRESHOLD_RATIO * window.innerHeight
+      let activeBlockId = initialActiveId
+
+      if (isScrollingDown) {
+        for (let i = blocks.length - 1; i >= 0; i--) {
+          if (blocks[i].getBoundingClientRect().top <= threshold) {
+            activeBlockId = blocks[i].id
+            break
+          }
+        }
+      } else {
+        for (const block of blocks) {
+          if (block.getBoundingClientRect().bottom >= threshold) {
+            activeBlockId = block.id
+            break
+          }
+        }
+      }
+
+      setActiveId(activeBlockId)
     }
-  }, [className, handleScroll, initialActiveClassName])
 
-  useEffect(handleScroll, [handleScroll])
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [initialActiveId])
 
-  return activeMenu
+  return activeId
 }

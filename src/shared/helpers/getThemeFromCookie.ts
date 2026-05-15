@@ -1,4 +1,4 @@
-import { COOKIES_KEYS } from '@/shared/consts/localeStogrageConsts'
+import { COOKIES_KEYS } from '@/shared/consts/cookieKeys'
 
 export const getThemeFromCookie = () => {
   const cookies = document.cookie.split(';')

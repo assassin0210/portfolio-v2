@@ -1,67 +1,289 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-mainGreen: #00c976;
+
+  --breakpoint-small: 640px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-laptop: 1024px;
+  --breakpoint-desktop: 1280px;
+  --breakpoint-hr: 1536px;
+}
+
+@utility container {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 500px;
+
+  @variant small {
+    max-width: 640px;
+  }
+  @variant tablet {
+    max-width: 1024px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @variant laptop {
+    max-width: 1024px;
+  }
+  @variant desktop {
+    max-width: 1024px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  @variant hr {
+    max-width: 1280px;
+  }
+}
 
 .animated-bar {
-    height: 2px;
-    width: 40px;
-    transition: width 0.3s ease-in-out
-
-}
-html ::-webkit-scrollbar {
-    width: 0.5rem
-}
-
-html ::-webkit-scrollbar-thumb {
-    background-color: darkgray;
+  height: 2px;
+  width: 40px;
+  transition: width 0.3s ease-in-out;
 }
 
 .animated-bar.active {
-    width: 70px;
+  width: 70px;
 }
 
-.gradient {
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
+html ::-webkit-scrollbar {
+  width: 0.5rem;
 }
 
-.gradient-dark{
-    background: radial-gradient(circle, rgb(13, 29, 58) 0%, rgba(14,23,42,10) 100%);
+html ::-webkit-scrollbar-thumb {
+  background-color: var(--color-stone-300);
+}
 
+html.dark ::-webkit-scrollbar-thumb {
+  background-color: var(--color-slate-700);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-mainGreen);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 .theme-switch {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.switch-track {
-    width: 4.4rem;
-    height: 2.2rem;
-    border-radius: 1.1rem;
-    background-color: #ffffff;
-    cursor: pointer;
-    position: relative;
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
-.switch-handle {
-    width: 2.2rem;
-    height: 2.2rem;
-    border-radius: 1.1rem;
-    background-color: #7b8794;
-    position: absolute;
-    top: 0;
-    left: 0;
+/* ============================== CV ============================== */
+
+.cv-document {
+  max-width: 860px;
+  margin: 0 auto 60px;
+  background: #ffffff;
+  color: #0f172a;
+  padding: 32px 40px;
+  border-radius: 6px;
+  box-shadow: 0 6px 24px rgba(15, 23, 42, 0.08);
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.4;
 }
 
-.switch-thumb {
-    width: 1.8rem;
-    height: 1.8rem;
-    border-radius: 50%;
-    background-color: #ffffff;
-    position: absolute;
-    top: 0.2rem;
-    left: 0.2rem;
+.cv-header {
+  border-bottom: 1px solid #cbd5e1;
+  padding-bottom: 16px;
+  margin-bottom: 18px;
+}
+
+.cv-name {
+  font-size: 24pt;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 0;
+  color: #0f172a;
+}
+
+.cv-role {
+  font-size: 13pt;
+  color: #334155;
+  margin: 4px 0 12px;
+}
+
+.cv-contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  font-size: 10pt;
+  color: #475569;
+}
+
+.cv-contact-grid a {
+  color: #475569;
+  text-decoration: none;
+  border-bottom: 1px dotted #94a3b8;
+}
+
+.cv-contact-grid a:hover {
+  color: #0f172a;
+  border-bottom-color: #0f172a;
+}
+
+.cv-section {
+  margin-top: 18px;
+}
+
+.cv-section-title {
+  font-size: 11pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #0f172a;
+  border-bottom: 1px solid #cbd5e1;
+  padding-bottom: 4px;
+  margin: 0 0 10px;
+}
+
+.cv-summary {
+  margin: 0;
+  color: #1e293b;
+}
+
+.cv-experience-item {
+  margin-bottom: 14px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.cv-experience-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.cv-experience-title {
+  font-size: 11.5pt;
+}
+
+.cv-experience-title strong {
+  color: #0f172a;
+}
+
+.cv-position {
+  color: #475569;
+  margin-left: 8px;
+}
+
+.cv-experience-date {
+  font-size: 10pt;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  white-space: nowrap;
+}
+
+.cv-bullets {
+  margin: 4px 0 0;
+  padding-left: 18px;
+  color: #1e293b;
+}
+
+.cv-bullets li {
+  margin-bottom: 3px;
+}
+
+.cv-skills {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  row-gap: 4px;
+  column-gap: 12px;
+  margin: 0;
+}
+
+.cv-skill-row {
+  display: contents;
+}
+
+.cv-skill-row dt {
+  font-weight: 600;
+  color: #0f172a;
+  font-size: 10.5pt;
+}
+
+.cv-skill-row dd {
+  margin: 0;
+  color: #1e293b;
+  font-size: 10.5pt;
+}
+
+.cv-projects {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.cv-projects li {
+  margin-bottom: 6px;
+  color: #1e293b;
+}
+
+.cv-projects strong {
+  color: #0f172a;
+}
+
+/* Print styles */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm 14mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+  }
+
+  .cv-screen {
+    background: #ffffff !important;
+  }
+
+  .cv-document {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 10pt;
+  }
+
+  .cv-name {
+    font-size: 20pt;
+  }
+
+  .cv-role {
+    font-size: 12pt;
+  }
+
+  .cv-section-title {
+    font-size: 10pt;
+  }
+
+  .cv-experience-title {
+    font-size: 10.5pt;
+  }
+
+  .cv-toolbar {
+    display: none !important;
+  }
 }

@@ -1,14 +1,21 @@
-/** @type {import('next').NextConfig} */
+const createNextIntlPlugin = require('next-intl/plugin')
 
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
+
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: { appDir: true },
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ['@svgr/webpack'],
-    })
-    return config
+  outputFileTracingRoot: __dirname,
+  images: {
+    qualities: [50, 75, 90, 100],
+  },
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: ['@svgr/webpack'],
+        as: '*.js',
+      },
+    },
   },
 }
 
-module.exports = nextConfig
+module.exports = withNextIntl(nextConfig)

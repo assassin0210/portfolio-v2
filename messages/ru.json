@@ -1,0 +1,196 @@
+{
+  "metadata": {
+    "title": "Александр Соколов — Senior Frontend Engineer (React / Next.js)",
+    "description": "Senior Frontend Engineer, 7+ лет на React, TypeScript и Next.js. Опыт Frontend Lead в US SaaS. Фокус — дизайн-системы, performance и accessibility. Открыт к Senior или Lead ролям удалённо.",
+    "siteName": "Александр Соколов"
+  },
+  "a11y": {
+    "switchToLight": "Переключить на светлую тему",
+    "switchToDark": "Переключить на тёмную тему",
+    "switchToLocale": "Переключить язык на {locale}",
+    "githubOf": "{name} на GitHub"
+  },
+  "header": {
+    "name": "Александр Соколов",
+    "role": "Senior Frontend Engineer",
+    "intro": "7+ лет на React, TypeScript и Next.js в продакшене. Опыт Frontend Lead в US SaaS. Фокус — performance, design systems и accessibility. Открыт к Senior или Lead ролям, удалённо.",
+    "location": "Удалённо · Worldwide",
+    "availability": "Открыт к работе",
+    "languages": "English · Русский"
+  },
+  "nav": {
+    "about": "Обо мне",
+    "experience": "Опыт",
+    "interestingExperience": "Интересные кейсы",
+    "projects": "Проекты"
+  },
+  "common": {
+    "viewAllProjects": "Все проекты",
+    "downloadCv": "Скачать CV",
+    "emailMe": "Написать",
+    "backToPortfolio": "В портфолио"
+  },
+  "notFound": {
+    "title": "404",
+    "description": "Страница не найдена или была перемещена."
+  },
+  "error": {
+    "title": "Что-то сломалось",
+    "fallback": "Неизвестная ошибка.",
+    "retry": "Повторить"
+  },
+  "about": {
+    "bio": "Делаю продакшн-фронтенд с 2018 года — от <hugeCorporation>крупного e-commerce SaaS</hugeCorporation> и <agency>агентства</agency> до продуктовых стартапов. Опыт Frontend Lead в US SaaS. Фокус — design systems, performance и accessibility.",
+    "looking": "Открыт к Senior или Lead Frontend ролям — remote, worldwide. Лучший фит: SaaS, fintech или продукт, где серьёзно относятся к performance, accessibility и design systems. English / Русский."
+  },
+  "experience": {
+    "items": {
+      "helium10": {
+        "date": "2018 — 2020",
+        "position": "Frontend-разработчик · US SaaS для Amazon-селлеров",
+        "description": [
+          "Разработал Adtomic — автоматизация рекламы на Amazon: ключевые кампании, мониторинг цен и конкурентов.",
+          "Развивал внутреннюю UI-библиотеку — компоненты, Storybook-документация, тесты.",
+          "Сделал дашборды и инструменты для управления Amazon-кампаниями в больших масштабах."
+        ]
+      },
+      "aeroidea": {
+        "date": "2020 — 2021",
+        "position": "Frontend-инженер · Digital product studio",
+        "description": [
+          "Подключился до MVP и довёл проект до продакшена. Разработал общие пакеты дизайн-системы и хелперов, используемые в нескольких проектах.",
+          "Сделал конструктор контентных блоков в админке — слайдеры, карусели, сетки событий — маркетинг собирает страницы без инженеров.",
+          "Настроил кеширование страниц и разделил нагрузку между сервером и клиентом — улучшение времени загрузки в Next.js.",
+          "Реализовал WCAG accessibility — контрастные темы, регулировка шрифта и межбуквенных интервалов. Менторил младших разработчиков, делал код-ревью."
+        ]
+      },
+      "zoftify": {
+        "date": "2021 — 2023",
+        "position": "Senior Frontend-инженер · Продуктовая студия (US-клиенты)",
+        "description": [
+          "Tourseta — multi-tenant SaaS для туроператоров. Сделал booking-флоу и админку для оператора на Next.js монорепе (Radix UI, Tailwind, TanStack Query).",
+          "Интегрировал платежи Stripe + Airwallex, авторизацию NextAuth с role-based access, FeatureHub flags и next-intl i18n в booking- и admin-частях Tourseta.",
+          "Оптимизировал performance и bundle-size Tourseta — измеримое улучшение load time и UX на медленных сетях.",
+          "Readyhubb — сервисный маркетплейс. Сделал админки и дашборды на Next.js, Stripe, Chart.js, Tailwind. Спроектировал гибкие интерфейсы для нетехнических контент-менеджеров."
+        ]
+      },
+      "schoolbusmanager": {
+        "date": "2023 — 2024",
+        "position": "Senior Frontend-инженер · SaaS для школьных автобусов (США)",
+        "description": [
+          "Вёл крупный фронт-рефакторинг — отвечал за архитектурные решения, code-review и общие паттерны в команде.",
+          "Ускорил критичные экраны до 7× в продакшене — точечные рефакторы и оптимизация бандла.",
+          "Перевёл проект с Webpack на Vite (dev rebuild с ~12s до <1s) и Redux → RTK Query под FSD-архитектуру.",
+          "Внедрил TypeScript по всему коду — безопаснее рефакторы и раньше ловятся ошибки.",
+          "Выкатил Zustand для локального состояния и централизованного управления модалками; настроил линтеры, форматтеры и CI-автоматизацию."
+        ]
+      },
+      "layers": {
+        "date": "2024 — по наст. время",
+        "position": "Senior Frontend-инженер · Work-management платформа (early-stage)",
+        "description": [
+          "Работаю по всем пакетам — Projects (задачи, спринты, канбан), Pages (страницы с базами данных), Flow (визуальные автоматизации), Meet (видеовстречи на LiveKit).",
+          "Фичи: перенос спринтов между проектами/папками, task attachments, project-creation wizard, modal-флоу, канбан-взаимодействия.",
+          "UX polish по всему приложению — assignee dropdowns, color pickers, badges, share panel; мобильная адаптация task detail view.",
+          "i18n покрытие в settings и shared компонентах (Mantine 8, i18next). Стек: React 18 + Vite + Zustand + Redux Toolkit + TanStack Query в монорепе."
+        ]
+      }
+    }
+  },
+  "interestingExperience": {
+    "intro": "Несколько фронт-задач из недавней работы — performance, архитектура, tooling — где решение не лежало на поверхности.",
+    "items": [
+      "Перевёл живущую много лет админку с CRA + Webpack на Vite и попутно заменил Redux на RTK Query. Пересборка в dev упала с ~12с до меньше 1с; продакшен-бандл уменьшился примерно на треть.",
+      "Достались дашборды с таблицами 60+ строк, которые скроллились на единичных fps. Проверил горячие участки, виртуализировал списки, мемоизировал тяжёлые рендеры, унифицировал кеширование серверного состояния — стабильные 60 fps на 1000+ строк.",
+      "Сделал конструктор контентных блоков для маркетингового CMS, где админы собирают страницы из типизированных блоков (слайдер, карусель товаров, сетка событий). Заменил ручные лендинги — инженеры больше не нужны для запуска промо."
+    ],
+    "outro": "Каждая задача решалась через профилирование, правильную абстракцию и измеримый результат."
+  },
+  "projects": {
+    "items": {
+      "schoolbusmanager": "SaaS для управления школьными автобусами в США — три приложения: админка (основной продукт), parent-app и маркетинговый лендинг (сделан с нуля). Вёл крупный фронт-рефакторинг — миграция Webpack → Vite, Redux → RTK Query, FSD-архитектура. Ускорение критичных экранов до 7×.",
+      "tourseta": "Multi-tenant SaaS для туроператоров — booking-флоу + админка. Frontend на Next.js монорепе с Radix UI, TanStack Query, Stripe/Airwallex, NextAuth, FeatureHub.",
+      "layers": "Work-management платформа — страницы с базами данных, проекты (задачи/спринты), формы, визуальные автоматизации (Flow), видеовстречи на LiveKit (Meet) и CRM в одном workspace. Web + desktop (JAR) сборки. React 18 + Vite + Mantine + TanStack Query.",
+      "prosv": "Анимированный сайт-портфолио фотографа в Aeroidea. Next.js + TanStack Query, image-driven вёрстка с motion-переходами между секциями.",
+      "cocktails": "Тестовое: каталог коктейлей из открытого API, ID коктейля из URL-параметра. React, TypeScript, RTK Query, Vite.",
+      "relines": "Тестовое для Relines: таблица пользователей из открытого API с рейтингом вверх/вниз и действиями бан/повышение. Tailwind + Framer Motion.",
+      "capture": "Пет-проект — эксперименты с переходами страниц и анимацией на Framer Motion + styled-components.",
+      "music": "Минималистичный 10-track плеер с управлением воспроизведением — UI/UX упражнение.",
+      "todolist": "Классический todo — добавление по Enter (без дублей), фильтр активных / завершённых, массовое удаление."
+    },
+    "roles": {
+      "lead": "Frontend Lead",
+      "engineer": "Frontend Engineer",
+      "commercial": "Commercial",
+      "takeHome": "Тестовое",
+      "pet": "Пет-проект"
+    }
+  },
+  "archive": {
+    "title": "Все проекты",
+    "table": {
+      "year": "Год",
+      "project": "Проект",
+      "madeAt": "Где",
+      "builtWith": "Стек",
+      "link": "Ссылка"
+    }
+  },
+  "cv": {
+    "summary": "Senior Frontend-инженер, 7+ лет на React, TypeScript и Next.js в продакшене. Сильные стороны — performance, design systems и accessibility. Опыт Frontend Lead в US SaaS. Открыт к Senior или Lead ролям, удалённо.",
+    "sections": {
+      "summary": "О себе",
+      "experience": "Опыт работы",
+      "skills": "Навыки",
+      "projects": "Избранные проекты"
+    },
+    "contact": {
+      "email": "speedo210@gmail.com",
+      "github": "github.com/assassin0210",
+      "portfolio": "alexsokol.dev",
+      "telegram": "t.me/sokol_dev",
+      "location": "Удалённо · Worldwide",
+      "languages": "English · Русский"
+    },
+    "skillsGroups": {
+      "frameworks": {
+        "label": "Фреймворки",
+        "value": "React (incl. 19), Next.js, TypeScript"
+      },
+      "state": {
+        "label": "State / Data",
+        "value": "TanStack Query, Redux Toolkit / RTK Query, Zustand, Jotai"
+      },
+      "ui": {
+        "label": "UI / Стилизация",
+        "value": "Tailwind CSS, Mantine, Radix UI, Styled Components"
+      },
+      "testing": {
+        "label": "Тестирование",
+        "value": "Playwright, Cypress, Jest, React Testing Library"
+      },
+      "tooling": {
+        "label": "Сборка / Tooling",
+        "value": "Vite, Webpack, Turbopack, Storybook, ESLint, Prettier"
+      },
+      "architecture": {
+        "label": "Архитектура",
+        "value": "FSD, Monorepo, Design Systems, Core Web Vitals, WCAG"
+      },
+      "integrations": {
+        "label": "Интеграции",
+        "value": "Stripe / Airwallex, NextAuth, FeatureHub, i18n (next-intl), Socket.IO, Lexical"
+      }
+    },
+    "projects": {
+      "layers": "Work-management платформа — страницы с базами данных, проекты (задачи/спринты), формы, визуальные автоматизации (Flow), видеовстречи на LiveKit (Meet), CRM. Web + desktop (JAR) сборки.",
+      "tourseta": "Multi-tenant SaaS для туроператоров — booking-флоу и админка для оператора. Next.js монорепа, Radix UI, TanStack Query, Stripe + Airwallex, NextAuth.",
+      "schoolbusmanager": "SaaS для управления школьными автобусами в США. Вёл крупный фронт-рефакторинг — ускорение до 7×, Webpack→Vite, Redux→RTK Query, FSD-архитектура.",
+      "helium10": "Adtomic — автоматизация рекламы на Amazon: ключевые кампании, мониторинг цен и конкурентов. Дашборды для селлеров в больших масштабах."
+    },
+    "actions": {
+      "print": "Print / Save as PDF",
+      "backToPortfolio": "Назад к портфолио"
+    }
+  }
+}

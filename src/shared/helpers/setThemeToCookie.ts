@@ -1,21 +1,18 @@
-import { COOKIES_KEYS } from '@/shared/consts/localeStogrageConsts'
+import { COOKIES_KEYS } from '@/shared/consts/cookieKeys'
 
-export const setThemeToCookie = (theme: string, path = '/') => {
+export const setThemeToCookie = (theme: 'light' | 'dark', path = '/') => {
   const expirationDate = new Date()
   expirationDate.setMonth(expirationDate.getMonth() + 1)
   const expires = expirationDate.toUTCString()
 
-  document.cookie = `${encodeURIComponent(
-    COOKIES_KEYS.THEME
-  )}=${encodeURIComponent(
-    theme
-  )}; expires=${expires}; path=${encodeURIComponent(path)}`
+  document.cookie = `${COOKIES_KEYS.THEME}=${theme}; expires=${expires}; path=${path}; SameSite=Lax`
 
-  // document.body.classList?.add('transition')
+  const root = document.documentElement
   if (theme === 'light') {
-    document.documentElement.classList.remove('dark')
+    root.classList.remove('dark')
+    root.classList.add('light')
   } else {
-    document.documentElement.classList.remove('light')
-    document.documentElement.classList?.add('dark')
+    root.classList.remove('light')
+    root.classList.add('dark')
   }
 }

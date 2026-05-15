@@ -4,31 +4,14 @@ import { InterestingExperience } from '@/features/interestingExperience/Interest
 import { Projects } from '@/features/projects/Projects'
 
 export const blocks = [
-  {
-    id: 'about',
-    label: 'About',
-    Component: About,
-  },
-  {
-    id: 'experience',
-    label: 'Experience',
-    Component: Experience,
-  },
+  { id: 'about', i18nKey: 'about', Component: About },
+  { id: 'experience', i18nKey: 'experience', Component: Experience },
   {
     id: 'interesting_experience',
-    label: 'Interesting Experience',
+    i18nKey: 'interestingExperience',
     Component: InterestingExperience,
   },
-  {
-    id: 'projects',
-    label: 'Projects',
-    Component: Projects,
-  },
-]
+  { id: 'projects', i18nKey: 'projects', Component: Projects },
+] as const
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const navBarBlocks = blocks.map(({ component, ...rest }) => ({
-  ...rest,
-}))
+export const navBarBlocks = blocks.map(({ id, i18nKey }) => ({ id, i18nKey }))

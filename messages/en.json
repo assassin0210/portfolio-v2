@@ -1,0 +1,196 @@
+{
+  "metadata": {
+    "title": "Alexandr Sokolov — Senior Frontend Engineer (React / Next.js)",
+    "description": "Senior Frontend Engineer with 7+ years on React, TypeScript, and Next.js. Frontend Lead experience on a US-based SaaS. Focus on design systems, performance, and accessibility. Open to Senior or Lead remote roles.",
+    "siteName": "Alexandr Sokolov"
+  },
+  "a11y": {
+    "switchToLight": "Switch to light theme",
+    "switchToDark": "Switch to dark theme",
+    "switchToLocale": "Switch to {locale}",
+    "githubOf": "{name} on GitHub"
+  },
+  "header": {
+    "name": "Alexandr Sokolov",
+    "role": "Senior Frontend Engineer",
+    "intro": "7+ years on React, TypeScript, and Next.js in production. Frontend Lead experience on a US-based SaaS. Focus on performance, design systems, and accessibility. Open to Senior or Lead roles, remote.",
+    "location": "Remote · Worldwide",
+    "availability": "Open to work",
+    "languages": "English · Русский"
+  },
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "interestingExperience": "Interesting Experience",
+    "projects": "Projects"
+  },
+  "common": {
+    "viewAllProjects": "View all Projects",
+    "downloadCv": "Download CV",
+    "emailMe": "Email me",
+    "backToPortfolio": "Back to portfolio"
+  },
+  "notFound": {
+    "title": "404",
+    "description": "The page you're looking for doesn't exist or has moved."
+  },
+  "error": {
+    "title": "Something broke",
+    "fallback": "Unknown error.",
+    "retry": "Try again"
+  },
+  "about": {
+    "bio": "Building production frontends since 2018 — from a <hugeCorporation>large e-commerce SaaS</hugeCorporation> and an <agency>agency</agency> to product startups. Frontend Lead experience on a US-based SaaS. Focus: design systems, performance, and accessibility.",
+    "looking": "Open to Senior or Lead Frontend roles — remote, worldwide. Best fit: SaaS, fintech, or any product that takes performance, accessibility, and design systems seriously. English / Russian."
+  },
+  "experience": {
+    "items": {
+      "helium10": {
+        "date": "2018 — 2020",
+        "position": "Frontend Developer · US SaaS for Amazon sellers",
+        "description": [
+          "Built Adtomic — Amazon advertising automation: keyword campaigns, price and competitor monitoring.",
+          "Contributed to the internal UI library — components, Storybook documentation, and tests.",
+          "Engineered dashboards and tooling that let Amazon sellers manage campaigns at scale."
+        ]
+      },
+      "aeroidea": {
+        "date": "2020 — 2021",
+        "position": "Frontend Engineer · Digital product studio",
+        "description": [
+          "Joined pre-MVP and shipped to production. Built shared design-system and helper packages reused across multiple projects.",
+          "Built a content-block builder in the admin panel — sliders, carousels, event grids — letting marketing assemble pages without engineering involvement.",
+          "Tuned page caching and server/client workload split, improving Next.js load times.",
+          "Implemented WCAG accessibility — high-contrast themes, font-size and letter-spacing controls. Mentored junior developers and reviewed code."
+        ]
+      },
+      "zoftify": {
+        "date": "2021 — 2023",
+        "position": "Senior Frontend Engineer · Product studio (US clients)",
+        "description": [
+          "Tourseta — multi-tenant SaaS for tour operators. Built booking flow and per-operator admin on a Next.js monorepo (Radix UI, Tailwind, TanStack Query).",
+          "Integrated Stripe + Airwallex payments, NextAuth authentication with role-based access, FeatureHub flags, and next-intl i18n across Tourseta booking and admin surfaces.",
+          "Optimized Tourseta performance and bundle size — measurable load-time and UX gains on slow networks.",
+          "Readyhubb — service marketplace. Built admin panels and dashboards with Next.js, Stripe, Chart.js, and Tailwind. Designed flexible interfaces for non-technical content management."
+        ]
+      },
+      "schoolbusmanager": {
+        "date": "2023 — 2024",
+        "position": "Senior Frontend Engineer · Bus-operations SaaS for US school districts",
+        "description": [
+          "Led a major frontend refactor — owned architecture decisions, code-review process, and shared patterns across the team.",
+          "Optimized critical-path screens — up to 7× faster in production through targeted refactors and bundle work.",
+          "Migrated Webpack → Vite (dev rebuild from ~12s to <1s) and Redux → RTK Query under FSD architecture.",
+          "Introduced TypeScript across the codebase — safer refactors, earlier error detection.",
+          "Rolled out Zustand for local state and centralized modal management; set up linting, formatting, and CI automation."
+        ]
+      },
+      "layers": {
+        "date": "2024 — present",
+        "position": "Senior Frontend Engineer · Early-stage work-management platform",
+        "description": [
+          "Contributing across packages — Projects (tasks, sprints, kanban), Pages (rich pages with databases), Flow (visual automations), and Meet (in-app video on LiveKit).",
+          "Shipped feature work: sprint move across projects/folders, task attachments, project-creation wizard, modal flows, kanban interactions.",
+          "UX polish across the app — assignee dropdowns, color pickers, badges, share panel; mobile adaptivity for the task detail view.",
+          "i18n coverage in settings and shared components (Mantine 8, i18next). Stack: React 18 + Vite + Zustand + Redux Toolkit + TanStack Query in a monorepo."
+        ]
+      }
+    }
+  },
+  "interestingExperience": {
+    "intro": "A few frontend problems from recent work — performance, architecture, and tooling — where the solution wasn't obvious upfront.",
+    "items": [
+      "Migrated a long-lived admin panel from CRA + Webpack to Vite, replacing Redux with RTK Query along the way. Dev rebuild dropped from ~12s to under 1s; production bundle shrank by roughly a third.",
+      "Inherited dashboards with 60+ row tables that scrolled at single-digit fps. Profiled hot paths, virtualized the lists, memoized the heavy renders, and unified server-state caching — got it to a steady 60 fps on 1000+ rows.",
+      "Built a content-block builder for a marketing CMS where admins compose pages from typed blocks (slider, product carousel, event grid). Replaced ad-hoc landing pages and removed the need for engineering involvement in promo launches."
+    ],
+    "outro": "Each one came down to careful profiling, the right abstraction, and shipping something measurably better."
+  },
+  "projects": {
+    "items": {
+      "schoolbusmanager": "Bus operations SaaS for US school districts — three apps: admin panel (main product), parent app, and the marketing landing I built from scratch. Led a major frontend refactor — migrated Webpack → Vite, Redux → RTK Query, adopted FSD. Up to 7× perf gains on critical screens.",
+      "tourseta": "Multi-tenant SaaS for tour operators — booking flow + admin. Frontend on a Next.js monorepo with Radix UI, TanStack Query, Stripe/Airwallex payments, NextAuth, FeatureHub.",
+      "layers": "Work-management platform — pages with databases, projects (tasks/sprints), forms, visual automations (Flow), in-app video on LiveKit (Meet), and CRM in one workspace. Web + desktop (JAR) builds. React 18 + Vite + Mantine + TanStack Query.",
+      "prosv": "Animated photographer portfolio at Aeroidea. Next.js + TanStack Query, image-driven layout with motion-based section transitions.",
+      "cocktails": "Take-home: cocktail browser pulling a public API, cocktail ID read from the URL. React, TypeScript, RTK Query, Vite.",
+      "relines": "Take-home for Relines: user table from a public API with rate-up/rate-down and ban/promote actions. Tailwind + Framer Motion.",
+      "capture": "Pet project — exploring page transitions and motion choreography with Framer Motion and styled-components.",
+      "music": "10-track music player — minimalist UI / UX exercise with playback controls.",
+      "todolist": "Classic todo — add by Enter (deduped), filter active / completed, bulk-clear completed."
+    },
+    "roles": {
+      "lead": "Frontend Lead",
+      "engineer": "Frontend Engineer",
+      "commercial": "Commercial",
+      "takeHome": "Take-home",
+      "pet": "Pet project"
+    }
+  },
+  "archive": {
+    "title": "All projects",
+    "table": {
+      "year": "Year",
+      "project": "Project",
+      "madeAt": "Made at",
+      "builtWith": "Built with",
+      "link": "Link"
+    }
+  },
+  "cv": {
+    "summary": "Senior Frontend Engineer with 7+ years building React, TypeScript, and Next.js applications in production. Strong on performance, design systems, and accessibility. Frontend Lead experience on a US-based SaaS. Open to Senior or Lead remote roles.",
+    "sections": {
+      "summary": "Summary",
+      "experience": "Experience",
+      "skills": "Skills",
+      "projects": "Selected Projects"
+    },
+    "contact": {
+      "email": "speedo210@gmail.com",
+      "github": "github.com/assassin0210",
+      "portfolio": "alexsokol.dev",
+      "telegram": "t.me/sokol_dev",
+      "location": "Remote · Worldwide",
+      "languages": "English · Русский"
+    },
+    "skillsGroups": {
+      "frameworks": {
+        "label": "Frameworks",
+        "value": "React (incl. 19), Next.js, TypeScript"
+      },
+      "state": {
+        "label": "State / Data",
+        "value": "TanStack Query, Redux Toolkit / RTK Query, Zustand, Jotai"
+      },
+      "ui": {
+        "label": "UI / Styling",
+        "value": "Tailwind CSS, Mantine, Radix UI, Styled Components"
+      },
+      "testing": {
+        "label": "Testing",
+        "value": "Playwright, Cypress, Jest, React Testing Library"
+      },
+      "tooling": {
+        "label": "Build & Tooling",
+        "value": "Vite, Webpack, Turbopack, Storybook, ESLint, Prettier"
+      },
+      "architecture": {
+        "label": "Architecture",
+        "value": "FSD, Monorepo, Design Systems, Core Web Vitals, WCAG"
+      },
+      "integrations": {
+        "label": "Integrations",
+        "value": "Stripe / Airwallex, NextAuth, FeatureHub, i18n (next-intl), Socket.IO, Lexical"
+      }
+    },
+    "projects": {
+      "layers": "Work-management platform — pages with databases, projects (tasks/sprints), forms, visual automations (Flow), video meetings on LiveKit (Meet), CRM. Web + desktop (JAR) builds.",
+      "tourseta": "Multi-tenant SaaS for tour operators — booking flow and per-operator admin. Next.js monorepo, Radix UI, TanStack Query, Stripe + Airwallex, NextAuth.",
+      "schoolbusmanager": "Bus operations SaaS for US school districts. Led a major frontend refactor — up to 7× perf gains, Webpack→Vite, Redux→RTK Query, FSD architecture.",
+      "helium10": "Adtomic — Amazon advertising automation: keyword campaigns, price and competitor monitoring. Built dashboards used by Amazon sellers at scale."
+    },
+    "actions": {
+      "print": "Print / Save as PDF",
+      "backToPortfolio": "Back to portfolio"
+    }
+  }
+}

@@ -2,6 +2,7 @@ import { memo } from 'react'
 
 import {
   IconGithub,
+  IconLinkedin,
   IconMail,
   IconPhone,
   IconTelegram,
@@ -12,6 +13,11 @@ const socialNetworks = [
     Icon: IconGithub,
     link: 'https://github.com/assassin0210',
     label: 'GitHub',
+  },
+  {
+    Icon: IconLinkedin,
+    link: 'https://www.linkedin.com/in/alexander-sokolov-0182442a1/',
+    label: 'LinkedIn',
   },
   { Icon: IconTelegram, link: 'https://t.me/sokol_dev', label: 'Telegram' },
   { Icon: IconPhone, link: 'tel:+79777509711', label: 'Phone' },

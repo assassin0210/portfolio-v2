@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Alexandr Sokolov — Senior Frontend Engineer (React / Next.js)",
-    "description": "Senior Frontend Engineer with 7+ years on React, TypeScript, and Next.js. I build complex product interfaces — dashboards, tables, admin panels — make slow apps fast, and modernize legacy codebases. Open to Senior or Lead remote roles.",
+    "description": "Senior Frontend Engineer with 7+ years on React, TypeScript, and Next.js. I build complex product interfaces — dashboards, tables, admin panels — make slow apps fast, and modernize legacy codebases. Open to Senior remote roles.",
     "siteName": "Alexandr Sokolov"
   },
   "a11y": {
@@ -13,10 +13,10 @@
   "header": {
     "name": "Alexandr Sokolov",
     "role": "Senior Frontend Engineer",
-    "intro": "7+ years in React, TypeScript, and Next.js. I build complex product interfaces, make slow apps fast, and run an AI-assisted workflow that ships faster without cutting corners. Open to Senior or Lead roles, remote.",
+    "intro": "7+ years in React, TypeScript, and Next.js. I build complex product interfaces, make slow apps fast, and run an AI-assisted workflow that ships faster without cutting corners. Open to Senior roles, remote.",
     "location": "Remote · Worldwide",
     "availability": "Open to work",
-    "languages": "English · Русский"
+    "languages": "Русский · English (B1)"
   },
   "nav": {
     "about": "About",
@@ -40,7 +40,7 @@
   "about": {
     "bio": "Frontend developer since 2018 — first at a <hugeCorporation>large e-commerce SaaS</hugeCorporation>, then a <agency>product studio</agency>, then US product startups. Day to day I work on data-heavy interfaces — dashboards, complex tables, multi-step flows — and the refactors that keep them fast as they grow. I like readable code, small reviewable PRs, and working closely with design and product.",
     "ai": "Since 2024 my daily workflow is built around AI coding agents — mainly Claude Code: project rules and skills, subagents for code review and audits, browser and Playwright MCP for checking the result in a real browser. AI writes the routine — migrations, tests, boilerplate; I keep the architecture, review every diff, and nothing ships without typecheck, tests, and a screenshot.",
-    "looking": "Open to Senior or Lead Frontend roles, remote. I do my best work on products with real UI complexity and a team that values performance and craft — SaaS, fintech, anything with hard frontend problems. English and Russian."
+    "looking": "Open to Senior Frontend roles, remote. I do my best work on products with real UI complexity and a team that values performance and craft — SaaS, fintech, anything with hard frontend problems. Russian — native; English — B1: I read and write technical English freely, spoken is intermediate and improving."
   },
   "experience": {
     "items": {
@@ -64,10 +64,10 @@
         ]
       },
       "zoftify": {
-        "date": "2021 — present",
+        "date": "2021 — 2023 · 2025 — present",
         "position": "Senior Frontend / Full-stack 70/30 · Product studio",
         "description": [
-          "Lead the frontend of two products: Tourseta (tour-operator booking platform, 130+ pages, team of 5–8) and Readyhubb (services marketplace).",
+          "Own the frontend of two products: Tourseta (tour-operator booking platform, 130+ pages, team of 5–8) and Readyhubb (services marketplace).",
           "Tourseta: public booking site plus operator dashboards — tours, bookings, invoices, payments. Next.js/React on the frontend, shared packages for UI, bookings, money, and i18n in a monorepo.",
           "Frontend is my main focus, but I also take backend tasks (~30% of the time): NestJS + Prisma on PostgreSQL, AWS (S3, SQS, Lambda for file processing and PDF rendering), JWT auth with roles, Swagger, Sentry, Docker.",
           "Added payments (Stripe, Airwallex), PDF generation (invoices, vouchers), transactional email (SendGrid + react-email), and multi-currency / multi-language support end to end.",
@@ -89,7 +89,7 @@
         "date": "2024 — 2026",
         "position": "Senior Frontend Engineer · Work-management platform",
         "description": [
-          "Led 4 of 11 packages in a Turborepo monorepo (team of ~15): Projects, Pages, Flow, and Meet (LiveKit video).",
+          "Owned 4 of 11 packages in a Turborepo monorepo (team of ~15): Projects, Pages, Flow, and Meet (LiveKit video).",
           "Shipped 15+ product features — from sprints and kanban to a project-creation wizard.",
           "Made heavy screens (task lists, kanban) ~2× faster — virtualization, memoization, fewer re-renders.",
           "Mobile adaptivity of key screens; unified i18n for shared components (Mantine 8, i18next). Stack: React 18, Vite, Zustand, Redux Toolkit, TanStack Query."
@@ -100,16 +100,16 @@
   "projects": {
     "items": {
       "schoolbusmanager": "Bus operations SaaS for US school districts — three apps: admin panel (main product), parent app, and the marketing landing I built from scratch. Led a major frontend refactor — migrated Webpack → Vite, Redux → RTK Query, adopted FSD. Up to 7× perf gains on critical screens.",
-      "tourseta": "Multi-tenant SaaS for tour operators — booking flow and per-operator admin. Own the frontend in a team of 5–8, plus ~30% backend on NestJS + Prisma. Next.js monorepo, Radix UI, TanStack Query, Stripe/Airwallex payments, NextAuth, FeatureHub.",
+      "tourseta": "Multi-tenant SaaS for tour operators — booking flow and per-operator admin. Frontend in a team of 5–8, plus ~30% backend on NestJS + Prisma. Next.js monorepo, Radix UI, TanStack Query, Stripe/Airwallex payments, NextAuth, FeatureHub.",
       "layers": "Work-management platform — pages with databases, projects (tasks/sprints/kanban), visual automations (Flow), in-app video on LiveKit (Meet), and CRM. Team of ~15 engineers. Web + desktop (JAR) builds. React 18 + Vite + Mantine + TanStack Query."
     },
     "roles": {
       "lead": "Frontend Lead",
-      "engineer": "Frontend Engineer"
+      "engineer": "Senior Frontend Engineer"
     }
   },
   "cv": {
-    "summary": "Frontend engineer with 7+ years in React, TypeScript, and Next.js. I like complex product interfaces — dashboards, tables, editors — and I'm good at making slow apps fast and bringing old codebases up to date. Right now I lead the frontend of Tourseta, a booking platform for tour operators, and cover part of its NestJS backend (~30% of my time). I work with AI coding agents daily (Claude Code) and know how to make that workflow reliable in a team. Open to Senior or Lead roles, remote.",
+    "summary": "Frontend engineer with 7+ years in React, TypeScript, and Next.js. I like complex product interfaces — dashboards, tables, editors — and I'm good at making slow apps fast and bringing old codebases up to date. Right now I build the frontend of Tourseta, a booking platform for tour operators, and cover part of its NestJS backend (~30% of my time). I work with AI coding agents daily (Claude Code) and know how to make that workflow reliable in a team. Open to Senior roles, remote.",
     "sections": {
       "summary": "Summary",
       "experience": "Experience",
@@ -122,7 +122,7 @@
       "portfolio": "alexsokol.dev",
       "telegram": "t.me/sokol_dev",
       "location": "Remote · Worldwide",
-      "languages": "English · Русский"
+      "languages": "Русский (native) · English (B1)"
     },
     "skillsGroups": {
       "frameworks": {

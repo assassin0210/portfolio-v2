@@ -30,7 +30,7 @@ export const projectsData: readonly IProjectItem[] = [
     i18nKey: 'layers',
     href: 'https://layers.md/',
     projectName: 'Layers',
-    role: 'lead',
+    role: 'engineer',
     images: [layers1, layers2, layers3],
     chips: [
       'React',
@@ -47,7 +47,7 @@ export const projectsData: readonly IProjectItem[] = [
     i18nKey: 'tourseta',
     href: 'https://tourseta.com/',
     projectName: 'Tourseta',
-    role: 'lead',
+    role: 'engineer',
     images: [tourseta1, tourseta2, tourseta3, tourseta4],
     chips: [
       'Next.js',

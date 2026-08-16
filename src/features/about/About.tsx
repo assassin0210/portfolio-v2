@@ -36,6 +36,7 @@ export const About = memo(() => {
               hugeCorporation: renderHugeCorporation,
             })}
           </P16>
+          <P16>{t('ai')}</P16>
           <P16>{t('looking')}</P16>
         </div>
       </AnimateFromSide>

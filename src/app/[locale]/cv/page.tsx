@@ -14,18 +14,11 @@ const SKILL_GROUPS = [
   'ui',
   'testing',
   'tooling',
+  'backend',
+  'ai',
   'architecture',
   'integrations',
 ] as const
-
-const FEATURED_PROJECTS = [
-  'layers',
-  'tourseta',
-  'schoolbusmanager',
-  'helium10',
-] as const
-
-const PROJECT_SPLIT = ' — '
 
 export const generateStaticParams = () =>
   routing.locales.map((locale) => ({ locale }))
@@ -41,12 +34,6 @@ export const generateMetadata = async ({
     title: `CV — ${tMeta('siteName')}`,
     robots: { index: false, follow: false },
   }
-}
-
-const splitProject = (text: string): [string, string] => {
-  const idx = text.indexOf(PROJECT_SPLIT)
-  if (idx === -1) return [text, '']
-  return [text.slice(0, idx), text.slice(idx + PROJECT_SPLIT.length)]
 }
 
 const ExternalLink = memo(
@@ -103,6 +90,9 @@ const CvPage = async ({ params }: IPageProps) => {
             <span>{t('cv.contact.languages')}</span>
             <a href={`mailto:${t('cv.contact.email')}`}>
               {t('cv.contact.email')}
+            </a>
+            <a href={`tel:${t('cv.contact.phone').replace(/[\s-]/g, '')}`}>
+              {t('cv.contact.phone')}
             </a>
             <ExternalLink
               href={`https://${t('cv.contact.portfolio')}`}
@@ -162,20 +152,6 @@ const CvPage = async ({ params }: IPageProps) => {
               </div>
             ))}
           </dl>
-        </CvSection>
-
-        <CvSection title={t('cv.sections.projects')}>
-          <ul className={'cv-projects'}>
-            {FEATURED_PROJECTS.map((key) => {
-              const [head, rest] = splitProject(t(`cv.projects.${key}`))
-              return (
-                <li key={key}>
-                  <strong>{head}</strong>
-                  {rest ? `${PROJECT_SPLIT}${rest}` : ''}
-                </li>
-              )
-            })}
-          </ul>
         </CvSection>
       </article>
     </div>

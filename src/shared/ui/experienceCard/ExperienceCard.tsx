@@ -1,6 +1,6 @@
 import { memo, ReactNode } from 'react'
 
-import { IconArrowUpRight, IconGithub } from '../../assets/icons/icons'
+import { IconArrowUpRight } from '../../assets/icons/icons'
 import { Chip } from '../Chip'
 import { H3, P14, P16 } from '../Typography'
 
@@ -14,7 +14,6 @@ interface IProps {
   subtitle?: string
   description?: string | readonly string[]
   href?: string
-  githubLink?: string
 }
 
 export const ExperienceCard = memo(
@@ -28,7 +27,6 @@ export const ExperienceCard = memo(
     subtitle,
     description,
     href,
-    githubLink,
   }: IProps) => {
     const wrapperClass = `relative pb-5 group pt-4 pl-5 pr-7 grid laptop:grid-cols-[150px_1fr] gap-10 transition duration-300 rounded-md ring-1 ring-transparent hover:ring-slate-300 dark:hover:ring-slate-700 ${
       isHovered
@@ -125,20 +123,6 @@ export const ExperienceCard = memo(
           />
         ) : null}
         <div className={'contents pointer-events-none'}>{content}</div>
-        {githubLink && (
-          <a
-            href={githubLink}
-            target={'_blank'}
-            rel="noreferrer"
-            aria-label={`${linkName} — GitHub`}
-            onClick={(e) => e.stopPropagation()}
-            className={
-              'absolute right-3 bottom-3 z-10 p-1 rounded hover:scale-125 transition focus-visible:outline-2 focus-visible:outline-mainGreen focus-visible:outline-offset-2'
-            }
-          >
-            <IconGithub className={'dark:fill-slate-50 w-6 opacity-75'} />
-          </a>
-        )}
       </article>
     )
   }

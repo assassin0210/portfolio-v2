@@ -161,11 +161,11 @@ button:focus-visible {
 
 .cv-experience-item {
   margin-bottom: 14px;
-  break-inside: avoid;
-  page-break-inside: avoid;
 }
 
 .cv-experience-head {
+  break-after: avoid;
+  page-break-after: avoid;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -202,6 +202,8 @@ button:focus-visible {
 
 .cv-bullets li {
   margin-bottom: 3px;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .cv-skills {
@@ -226,20 +228,6 @@ button:focus-visible {
   margin: 0;
   color: #1e293b;
   font-size: 10.5pt;
-}
-
-.cv-projects {
-  margin: 0;
-  padding-left: 18px;
-}
-
-.cv-projects li {
-  margin-bottom: 6px;
-  color: #1e293b;
-}
-
-.cv-projects strong {
-  color: #0f172a;
 }
 
 /* Print styles */

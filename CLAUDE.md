@@ -16,7 +16,10 @@ yarn build           # Production build (Turbopack)
 yarn start           # Run production build
 yarn lint            # eslint .
 yarn lint --fix      # Autofix
+yarn cv:pdf          # Regenerate public/Alex_Sokolov_CV_{en,ru}.pdf from /cv (a server must be running; CV_BASE_URL overrides http://localhost:3000)
 ```
+
+**After ANY change to `messages/*.json` `experience`/`cv` namespaces — run `yarn cv:pdf` and commit the PDFs.** The "Download CV" buttons link straight to those static files, not to `/cv`.
 
 ## Project Structure (FSD-flavoured)
 
@@ -25,13 +28,12 @@ src/
 ├── app/[locale]/         # Next.js App Router routes (locale-prefixed)
 │   ├── layout.tsx        # Root layout: theme + i18n + providers (Server Component)
 │   ├── page.tsx
-│   └── archive/page.tsx
+│   └── cv/page.tsx       # HTML resume (noindex) — source for the PDF; PrintButton.tsx
 ├── features/             # Feature modules
 │   ├── header/
 │   ├── about/
-│   ├── experience/       # data.ts (meta) + Experience.tsx + Resume.tsx
-│   ├── interestingExperience/
-│   ├── projects/         # data.ts + Projects.tsx + Slider.tsx
+│   ├── experience/       # data.ts (meta) + Experience.tsx + Resume.tsx (PDF download link)
+│   ├── projects/         # data.ts (3 commercial projects only) + Projects.tsx + Slider.tsx
 │   ├── socials/
 │   ├── homePage/
 │   └── mouseEffect/      # Cursor radial-gradient overlay (rAF + CSS var)
@@ -44,12 +46,14 @@ src/
 │   ├── animate/          # AnimateFromSide, AnimationOneByOne, useAnimateInTurn
 │   ├── hooks/            # useHoverHelper
 │   ├── helpers/          # cookie helpers
-│   ├── consts/           # COOKIES_KEYS (as-const), sidebarMenu
+│   ├── consts/           # COOKIES_KEYS (as-const), sidebarMenu, cvPdf (PDF href/filename)
 │   ├── lib/types/        # Theme, TComponentSize, TComponentType
 │   └── assets/           # icons.ts (SVG aggregator), images.ts
 ├── i18n/                 # next-intl config: routing, navigation (Link/useRouter), request config
 ├── proxy.ts              # Locale middleware (Next 16: `proxy` not `middleware`)
-└── messages/{en,ru}.json # All UI text
+├── messages/{en,ru}.json # All UI text
+├── scripts/cv-pdf.mts    # Headless Chromium → public/Alex_Sokolov_CV_{en,ru}.pdf
+└── public/*.pdf          # Generated CVs — committed, served statically
 ```
 
 ## Critical Rules (always enforced)

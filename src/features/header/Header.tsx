@@ -1,11 +1,12 @@
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { memo } from 'react'
 
 import { Socials } from '@/features/socials/Socials'
 import { Link } from '@/i18n/navigation'
 import { AnimateFromSide } from '@/shared/animate/AnimateFromSide'
 import { imgMy } from '@/shared/assets/images/images'
+import { getCvPdfFileName, getCvPdfHref } from '@/shared/consts/cvPdf'
 import { Button } from '@/shared/ui/button/Button'
 import { H1, H2, P16 } from '@/shared/ui/Typography'
 import { LanguageSwitcher } from '@/widgets/providers/locale/LanguageSwitcher'
@@ -16,6 +17,7 @@ import { Navbar } from './navbar/Navbar'
 export const Header = memo(() => {
   const t = useTranslations('header')
   const tCommon = useTranslations('common')
+  const locale = useLocale()
 
   return (
     <header
@@ -72,9 +74,9 @@ export const Header = memo(() => {
           </ul>
           <P16 className={'mt-3 max-w-[320px]'}>{t('intro')}</P16>
           <div className={'mt-5 flex flex-wrap gap-3 max-w-[320px]'}>
-            <Link href={'/cv'}>
+            <a href={getCvPdfHref(locale)} download={getCvPdfFileName(locale)}>
               <Button buttonSize={'SMALL'}>{tCommon('downloadCv')}</Button>
-            </Link>
+            </a>
             <a href={'mailto:speedo210@gmail.com'}>
               <Button
                 buttonSize={'SMALL'}

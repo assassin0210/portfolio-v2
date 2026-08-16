@@ -12,6 +12,8 @@ export const experienceData = [
       'TanStack Query',
       'NestJS',
       'Prisma',
+      'PostgreSQL',
+      'AWS',
       'Stripe',
       'NextAuth',
     ],

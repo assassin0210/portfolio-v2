@@ -11,12 +11,12 @@ ESLint 9 (flat config) + Prettier 3, Yarn 1.
 ## Commands
 
 ```bash
-yarn dev             # Next dev (Turbopack, default port 3000)
+yarn dev             # Next dev (Turbopack) on http://localhost:1111
 yarn build           # Production build (Turbopack)
 yarn start           # Run production build
 yarn lint            # eslint .
 yarn lint --fix      # Autofix
-yarn cv:pdf          # Regenerate public/Alex_Sokolov_CV_{en,ru}.pdf from /cv (a server must be running; CV_BASE_URL overrides http://localhost:3000)
+yarn cv:pdf          # Regenerate public/Alex_Sokolov_CV_{en,ru}.pdf from /cv (a server must be running; CV_BASE_URL overrides http://localhost:1111)
 ```
 
 **After ANY change to `messages/*.json` `experience`/`cv` namespaces — run `yarn cv:pdf` and commit the PDFs.** The "Download CV" buttons link straight to those static files, not to `/cv`.

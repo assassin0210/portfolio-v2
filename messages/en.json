@@ -65,18 +65,19 @@
       },
       "zoftify": {
         "date": "2021 — present",
-        "position": "Senior Frontend Engineer · Product studio",
+        "position": "Senior Frontend / Full-stack 70/30 · Product studio",
         "description": [
           "Lead the frontend of two products: Tourseta (tour-operator booking platform, 130+ pages, team of 5–8) and Readyhubb (services marketplace).",
-          "Tourseta: public booking site plus operator dashboards — tours, bookings, invoices, payments. Next.js/React on the frontend, part of the backend on NestJS + Prisma.",
-          "Added payments (Stripe, Airwallex), auth with access rights, PDF generation (invoices, vouchers), email sending, and multi-currency / multi-language support.",
+          "Tourseta: public booking site plus operator dashboards — tours, bookings, invoices, payments. Next.js/React on the frontend, shared packages for UI, bookings, money, and i18n in a monorepo.",
+          "Frontend is my main focus, but I also take backend tasks (~30% of the time): NestJS + Prisma on PostgreSQL, AWS (S3, SQS, Lambda for file processing and PDF rendering), JWT auth with roles, Swagger, Sentry, Docker.",
+          "Added payments (Stripe, Airwallex), PDF generation (invoices, vouchers), transactional email (SendGrid + react-email), and multi-currency / multi-language support end to end.",
           "Optimized load speed — noticeably faster on the slow connections some operators use.",
           "Readyhubb: built the admin and dashboards with no-code content management, so the team launches campaigns on its own."
         ]
       },
       "schoolbusmanager": {
         "date": "2023 — 2024",
-        "position": "Senior Frontend Engineer · School bus operations SaaS",
+        "position": "Senior Frontend Engineer · School bus SaaS",
         "description": [
           "Led the frontend of a school-bus operations product (routes, schedules, bus and driver tracking): admin app, parent portal, and the company website.",
           "Refactored an old, hard-to-maintain codebase incrementally without pausing production: upgraded React, moved class components to functional, Webpack → Vite (dev rebuilds ~12s → near-instant), server state → TanStack Query, TypeScript across the codebase.",
@@ -99,7 +100,7 @@
   "projects": {
     "items": {
       "schoolbusmanager": "Bus operations SaaS for US school districts — three apps: admin panel (main product), parent app, and the marketing landing I built from scratch. Led a major frontend refactor — migrated Webpack → Vite, Redux → RTK Query, adopted FSD. Up to 7× perf gains on critical screens.",
-      "tourseta": "Multi-tenant SaaS for tour operators — booking flow and per-operator admin. Own the frontend in a team of 5–8. Next.js monorepo, Radix UI, TanStack Query, Stripe/Airwallex payments, NextAuth, FeatureHub.",
+      "tourseta": "Multi-tenant SaaS for tour operators — booking flow and per-operator admin. Own the frontend in a team of 5–8, plus ~30% backend on NestJS + Prisma. Next.js monorepo, Radix UI, TanStack Query, Stripe/Airwallex payments, NextAuth, FeatureHub.",
       "layers": "Work-management platform — pages with databases, projects (tasks/sprints/kanban), visual automations (Flow), in-app video on LiveKit (Meet), and CRM. Team of ~15 engineers. Web + desktop (JAR) builds. React 18 + Vite + Mantine + TanStack Query."
     },
     "roles": {
@@ -108,7 +109,7 @@
     }
   },
   "cv": {
-    "summary": "Frontend engineer with 7+ years in React, TypeScript, and Next.js. I like complex product interfaces — dashboards, tables, editors — and I'm good at making slow apps fast and bringing old codebases up to date. Right now I lead the frontend of Tourseta, a booking platform for tour operators. I work with AI coding agents daily (Claude Code) and know how to make that workflow reliable in a team. Open to Senior or Lead roles, remote.",
+    "summary": "Frontend engineer with 7+ years in React, TypeScript, and Next.js. I like complex product interfaces — dashboards, tables, editors — and I'm good at making slow apps fast and bringing old codebases up to date. Right now I lead the frontend of Tourseta, a booking platform for tour operators, and cover part of its NestJS backend (~30% of my time). I work with AI coding agents daily (Claude Code) and know how to make that workflow reliable in a team. Open to Senior or Lead roles, remote.",
     "sections": {
       "summary": "Summary",
       "experience": "Experience",
@@ -145,8 +146,8 @@
         "value": "Vite, Webpack, Turbopack, Storybook, ESLint, Prettier"
       },
       "backend": {
-        "label": "Backend (working)",
-        "value": "Node.js, NestJS, Prisma, REST, WebSocket (Socket.IO)"
+        "label": "Backend (~30%)",
+        "value": "Node.js, NestJS, Prisma, PostgreSQL, REST, WebSocket (Socket.IO), AWS (S3, SQS, Lambda), Docker"
       },
       "ai": {
         "label": "AI-assisted dev",

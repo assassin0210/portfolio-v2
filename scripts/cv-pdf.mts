@@ -3,7 +3,7 @@ import { existsSync, readdirSync } from 'node:fs'
 import { homedir } from 'node:os'
 import { join, resolve } from 'node:path'
 
-const BASE_URL = process.env.CV_BASE_URL ?? 'http://localhost:3000'
+const BASE_URL = process.env.CV_BASE_URL ?? 'http://localhost:1111'
 const LOCALES = ['en', 'ru'] as const
 
 const findPlaywrightHeadlessShell = (): string | undefined => {

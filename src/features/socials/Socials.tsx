@@ -16,7 +16,7 @@ const socialNetworks = [
   },
   {
     Icon: IconLinkedin,
-    link: 'https://www.linkedin.com/in/alexander-sokolov-0182442a1/',
+    link: 'https://www.linkedin.com/in/alexsokol-dev/',
     label: 'LinkedIn',
   },
   { Icon: IconTelegram, link: 'https://t.me/sokol_dev', label: 'Telegram' },

@@ -25,7 +25,7 @@ export const projectsData: readonly IProjectItem[] = [
   {
     i18nKey: 'layers',
     href: 'https://layers.md/',
-    projectName: 'Layers',
+    projectName: 'DocSpace',
     role: 'engineer',
     images: [layers1, layers2, layers3],
     chips: [

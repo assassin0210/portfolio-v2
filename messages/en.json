@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Alexandr Sokolov — Senior Frontend Engineer (React / Next.js)",
-    "description": "Senior Frontend Engineer with 7+ years on React, TypeScript, and Next.js. I build complex product interfaces — dashboards, tables, admin panels — make slow apps fast, and modernize legacy codebases. Open to Senior remote roles.",
+    "description": "Senior Frontend Engineer with 9+ years on React, TypeScript, and Next.js. I build complex product interfaces — dashboards, tables, admin panels — make slow apps fast, and modernize legacy codebases. Open to Senior remote roles.",
     "siteName": "Alexandr Sokolov"
   },
   "a11y": {
@@ -13,7 +13,7 @@
   "header": {
     "name": "Alexandr Sokolov",
     "role": "Senior Frontend Engineer",
-    "intro": "7+ years in React, TypeScript, and Next.js. I build complex product interfaces, make slow apps fast, and run an AI-assisted workflow that ships faster without cutting corners. Open to Senior roles, remote.",
+    "intro": "9+ years in React, TypeScript, and Next.js. I build complex product interfaces, make slow apps fast, and run an AI-assisted workflow that ships faster without cutting corners. Open to Senior roles, remote.",
     "location": "Chișinău, Moldova (UTC+2) · Remote",
     "availability": "Open to work",
     "languages": "Русский · English (B1)"
@@ -38,14 +38,14 @@
     "retry": "Try again"
   },
   "about": {
-    "bio": "Frontend developer since 2018 — first at a <hugeCorporation>large e-commerce SaaS</hugeCorporation>, then a <agency>product studio</agency>, then US product startups. Day to day I work on data-heavy interfaces — dashboards, complex tables, multi-step flows — and the refactors that keep them fast as they grow. I like readable code, small reviewable PRs, and working closely with design and product.",
+    "bio": "Frontend developer since 2017 — first at a <hugeCorporation>large e-commerce SaaS</hugeCorporation>, then a <agency>product studio</agency>, then US product startups. Day to day I work on data-heavy interfaces — dashboards, complex tables, multi-step flows — and the refactors that keep them fast as they grow. I like readable code, small reviewable PRs, and working closely with design and product.",
     "ai": "Since 2024 my daily workflow is built around AI coding agents — mainly Claude Code: project rules and skills, subagents for code review and audits, browser and Playwright MCP for checking the result in a real browser. AI writes the routine — migrations, tests, boilerplate; I keep the architecture, review every diff, and nothing ships without typecheck, tests, and a screenshot.",
     "looking": "Open to Senior Frontend roles, remote. I do my best work on products with real UI complexity and a team that values performance and craft — SaaS, fintech, anything with hard frontend problems. Russian — native; English — B1: I read and write technical English freely, spoken is intermediate and improving."
   },
   "experience": {
     "items": {
       "helium10": {
-        "date": "2018 — 2020",
+        "date": "2017 — 2019",
         "position": "Frontend Developer · US SaaS for Amazon sellers",
         "description": [
           "Built Adtomic — Amazon advertising automation: sellers manage campaigns, bids, pricing, and competitor tracking in one place instead of spreadsheets.",
@@ -54,7 +54,7 @@
         ]
       },
       "aeroidea": {
-        "date": "2020 — 2021",
+        "date": "2019 — 2021",
         "position": "Frontend Engineer · Digital product studio",
         "description": [
           "Joined a product before launch and took it to production.",
@@ -64,7 +64,7 @@
         ]
       },
       "zoftify": {
-        "date": "2021 — 2023 · 2025 — present",
+        "date": "2025 — present",
         "position": "Senior Frontend / Full-stack 70/30 · Product studio",
         "description": [
           "Own the frontend of two products: a booking platform for tour operators (130+ pages, team of 5–8) and a services marketplace.",
@@ -76,7 +76,7 @@
         ]
       },
       "schoolbusmanager": {
-        "date": "2023 — 2024",
+        "date": "2021 — 2023",
         "position": "Senior Frontend Engineer · School bus SaaS",
         "description": [
           "Led the frontend of a school-bus operations product (routes, schedules, bus and driver tracking): admin app, parent portal, and the company website.",
@@ -86,7 +86,7 @@
         ]
       },
       "layers": {
-        "date": "2024 — 2026",
+        "date": "2023 — 2025",
         "position": "Senior Frontend Engineer · Work-management platform",
         "description": [
           "Owned 4 of 11 packages in a Turborepo monorepo (team of ~15): Projects, Pages, Flow, and Meet (LiveKit video).",
@@ -108,7 +108,7 @@
     }
   },
   "cv": {
-    "summary": "Frontend engineer with 7+ years in React, TypeScript, and Next.js. I like complex product interfaces — dashboards, tables, editors — and I'm good at making slow apps fast and bringing old codebases up to date. Right now I build the frontend of a booking platform for tour operators and cover part of its NestJS backend (~30% of my time). I work with AI coding agents daily (Claude Code) and know how to make that workflow reliable in a team. Open to Senior roles, remote.",
+    "summary": "Frontend engineer with 9+ years in React, TypeScript, and Next.js. I like complex product interfaces — dashboards, tables, editors — and I'm good at making slow apps fast and bringing old codebases up to date. Right now I build the frontend of a booking platform for tour operators and cover part of its NestJS backend (~30% of my time). I work with AI coding agents daily (Claude Code) and know how to make that workflow reliable in a team. Open to Senior roles, remote.",
     "sections": {
       "summary": "Summary",
       "experience": "Experience",

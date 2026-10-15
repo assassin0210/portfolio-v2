@@ -1,26 +1,7 @@
 export const experienceData = [
   {
-    key: 'zoftify',
-    organization: 'Zoftify',
-    href: 'https://zoftify.com/',
-    chips: [
-      'Next.js',
-      'React',
-      'TypeScript',
-      'Tailwind',
-      'Radix UI',
-      'TanStack Query',
-      'NestJS',
-      'Prisma',
-      'PostgreSQL',
-      'AWS',
-      'Stripe',
-      'NextAuth',
-    ],
-  },
-  {
     key: 'layers',
-    organization: 'Layers',
+    organization: 'DocSpace',
     href: 'https://layers.md/',
     chips: [
       'React',
@@ -56,6 +37,25 @@ export const experienceData = [
       'Recharts',
       'i18next',
       'Playwright',
+    ],
+  },
+  {
+    key: 'zoftify',
+    organization: 'Zoftify',
+    href: 'https://zoftify.com/',
+    chips: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Tailwind',
+      'Radix UI',
+      'TanStack Query',
+      'NestJS',
+      'Prisma',
+      'PostgreSQL',
+      'AWS',
+      'Stripe',
+      'NextAuth',
     ],
   },
   {

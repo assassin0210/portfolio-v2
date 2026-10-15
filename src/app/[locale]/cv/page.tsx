@@ -95,16 +95,8 @@ const CvPage = async ({ params }: IPageProps) => {
               {t('cv.contact.phone')}
             </a>
             <ExternalLink
-              href={`https://${t('cv.contact.portfolio')}`}
-              label={t('cv.contact.portfolio')}
-            />
-            <ExternalLink
               href={`https://${t('cv.contact.github')}`}
               label={t('cv.contact.github')}
-            />
-            <ExternalLink
-              href={`https://${t('cv.contact.linkedin')}`}
-              label={t('cv.contact.linkedin')}
             />
             <ExternalLink
               href={`https://${t('cv.contact.telegram')}`}

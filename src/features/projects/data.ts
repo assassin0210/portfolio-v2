@@ -8,10 +8,6 @@ import {
   sbmAdmin2,
   sbmAdmin3,
   sbmMarketing1,
-  tourseta1,
-  tourseta2,
-  tourseta3,
-  tourseta4,
 } from '@/shared/assets/images/images'
 
 export type ProjectRole = 'lead' | 'engineer'
@@ -41,23 +37,6 @@ export const projectsData: readonly IProjectItem[] = [
       'TanStack Query',
       'Lexical',
       'Playwright',
-    ],
-  },
-  {
-    i18nKey: 'tourseta',
-    href: 'https://tourseta.com/',
-    projectName: 'Tourseta',
-    role: 'engineer',
-    images: [tourseta1, tourseta2, tourseta3, tourseta4],
-    chips: [
-      'Next.js',
-      'TypeScript',
-      'Radix UI',
-      'Tailwind',
-      'TanStack Query',
-      'NextAuth',
-      'Stripe',
-      'next-intl',
     ],
   },
   {
